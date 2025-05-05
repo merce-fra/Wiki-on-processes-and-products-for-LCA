@@ -122,7 +122,7 @@ def process_files(input_dir, output_dir, is_db_file=False):
             
             # For db files, output to wiki_github root
             if is_db_file and ('pd_db' in filename or 'ps_db' in filename):
-                current_output_dir = os.path.join(base_path, "wiki_github")
+                current_output_dir = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA.wiki")
             
             # Change extension from .txt to .md for markdown
             output_filename = filename[:-4] + '.md'
@@ -151,12 +151,12 @@ def main():
     
     # Convert product pages
     product_input = os.path.join(base_path, "pages", "product")
-    product_output = os.path.join(base_path, "wiki_github", "product")
+    product_output = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA.wiki", "product")
     process_files(product_input, product_output, True)
     
     # Convert process pages
     process_input = os.path.join(base_path, "pages", "process")
-    process_output = os.path.join(base_path, "wiki_github", "process")
+    process_output = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA.wiki", "process")
     process_files(process_input, process_output, True)
     
     print("Conversion completed!")

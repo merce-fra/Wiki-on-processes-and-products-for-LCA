@@ -20,7 +20,7 @@ This project consists of two main parts:
 
 # Accessing the wiki (on this github) 
 
-Click [here](https://merce-gitlab.fr-merce.mee.com/gitlab/lca/wiki-on-processes-on-products-for-lca/-/wikis/home) to access the wiki on this gihub.
+Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) to access the wiki on this gihub.
 
 
 # Installation on Dokuwiki
