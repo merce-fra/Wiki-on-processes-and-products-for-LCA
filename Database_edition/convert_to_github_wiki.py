@@ -150,12 +150,12 @@ def main():
     global base_path
     
     # Convert product pages
-    product_input = os.path.join(base_path, "pages", "product")
+    product_input = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA", "product")
     product_output = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA.wiki", "product")
     process_files(product_input, product_output, True)
     
     # Convert process pages
-    process_input = os.path.join(base_path, "pages", "process")
+    process_input = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA", "process")
     process_output = os.path.join(base_path, "Wiki-on-processes-and-products-for-LCA.wiki", "process")
     process_files(process_input, process_output, True)
     
