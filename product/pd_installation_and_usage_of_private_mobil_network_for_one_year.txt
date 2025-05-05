@@ -1,7 +1,0 @@
-**Product: pd_installation_and_usage_of_private_mobil_network_for_one_year**
-
-__List of processes__
-  * [[process:ps_installation_and_usage_of_private_mobil_network_for_one_year_tdf]] - Quantity: None unit
-
-
-__May be similar to the following products__

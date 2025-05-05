@@ -1,7 +1,0 @@
-**Product: pd_active_it_equipement_ran**
-
-__List of processes__
-  * [[process:ps_active_it_equipement_ran_list_tdf_2_cisco]] - Quantity: None unit
-
-
-__May be similar to the following products__

@@ -46,7 +46,7 @@ def convert_database_index_to_markdown(content):
                 page = match.group(1)
                 # Determine folder based on prefix
                 folder = 'product' if page.startswith('pd_') else 'process'
-                markdown_line = f"* [{page}]({folder}/{page})"
+                markdown_line = f"* [{page}]({page})"#f"* [{page}]({folder}/{page})" #no folder support in wiki github 
                 markdown_content.append(markdown_line)
                 continue
                 
@@ -97,7 +97,7 @@ def convert_dokuwiki_to_markdown(content):
                     namespace = namespace.strip()
                     # Clean up the link components
                     page, namespace = clean_link_and_namespace(page, namespace)
-                    markdown_line = f"* [{page}]({namespace}/{page}){metadata}"
+                    markdown_line = f"* [{page}]({page}){metadata}" #f"* [{page}]({namespace}/{page}){metadata}" #no folder support in wiki github 
                     markdown_content.append(markdown_line)
                     continue
             

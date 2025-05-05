@@ -1,7 +1,0 @@
-**Product: pd_mobile_site_ran**
-
-__List of processes__
-  * [[process:ps_mobile_site_ran_installation_tdf]] - Quantity: None unit
-
-
-__May be similar to the following products__
