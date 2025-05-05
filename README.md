@@ -13,7 +13,7 @@ This project consists of three main parts:
 2. **The import function for Brightway-formatted data**  
    The tool "import_data_wiki.py" (folder code_database_edition) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel.
 
-   If new pages are added, the ps_db and pd_db data_base folder (where all the pages are listed) should be updated by running the code "update_database_list.py".
+   If new pages are added, the ps_db and pd_db files (where all the pages are listed) should be updated by running the code "update_database_list.py".
 
 3. **AI-based Wiki Edition**  
    This tool integrates AI to assist in the management and editing of the DokuWiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
