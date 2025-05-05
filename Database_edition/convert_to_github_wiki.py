@@ -8,6 +8,9 @@
 import os
 import re
 
+# Define base_path as a global variable
+base_path = r"c:\xampp\htdocs\dokuwiki\data" #REPLACE WITH YOUR PATH
+
 def clean_link_and_namespace(page, namespace):
     # Clean up page name and namespace
     page = page.strip().replace(' ', '_')
@@ -105,9 +108,6 @@ def convert_dokuwiki_to_markdown(content):
         markdown_content.append(line)
     
     return "\n".join(markdown_content)
-
-# Define base_path as a global variable
-base_path = r"c:\xampp\htdocs\dokuwiki\data"
 
 def process_files(input_dir, output_dir, is_db_file=False):
     # Create output directory if it doesn't exist

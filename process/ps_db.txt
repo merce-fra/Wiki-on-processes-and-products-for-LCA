@@ -11,12 +11,6 @@ Midstream:
 Upstream:
 
 To be classified:
-  *[[ps_active_it_equipement_ran_list_tdf]]
-  *[[ps_active_it_equipement_ran_list_tdf_2_cisco]]
-  *[[ps_core_network_installation_tdf]]
   *[[ps_db]]
   *[[ps_gpu_loubet]]
-  *[[ps_installation_and_usage_of_private_mobil_network_for_one_year_tdf]]
-  *[[ps_mobile_site_ran_installation_tdf]]
-  *[[ps_passive_it_equipement_ran_list_tdf]]
 

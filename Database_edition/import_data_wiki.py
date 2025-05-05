@@ -14,14 +14,17 @@ from brightway2 import *
 import os
 
 # %%
+# Define paths for database files
+base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA" #EDIT THIS PATH
+
 path = "./Code_database_edition\source_import\Example_bw\excel_importer_example.xlsx"
 #path = r"./Code_database_edition\source_import\network\MASTER_network.xlsx"
 
 imp = ExcelImporter(path) #Brightway import function to import data from Excel files
 
 # %%
-# Define paths for database files
-base_path = r"c:\xampp\htdocs\dokuwiki\data\pages"
+
+
 product_path = os.path.join(base_path, "product_new")  # New product pages added in product_new/ (to be moved manually to product/ if accepted)
 process_path = os.path.join(base_path, "process_new")  ## New process pages added in process_new/ (to be moved manually to process/ if accepted)
 product_db_path =  os.path.join(base_path, "product", "pd_db.txt")  # Keep original for db

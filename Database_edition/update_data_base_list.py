@@ -9,7 +9,8 @@
 import os
 
 # Define paths for database files
-base_path = r"c:\xampp\htdocs\dokuwiki\data\pages"
+base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA" #edit this path
+
 product_path = os.path.join(base_path, "product")
 process_path = os.path.join(base_path, "process")
 product_db_path = os.path.join(product_path, "pd_db.txt")
