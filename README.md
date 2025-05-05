@@ -1,6 +1,6 @@
 # Project Overview
 
-This project consists of two main parts:
+This project consists of three main parts:
 
 1. **The Wiki**  
    A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for Life Cycle Assessment (LCA). It provides a centralized repository for organizing and accessing information about products and processes, including their relationships and characteristics.
