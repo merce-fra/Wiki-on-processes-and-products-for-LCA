@@ -35,9 +35,7 @@ This tool provides AI-assisted management of Life Cycle Assessment (LCA) data wi
 
 1. **Product and Process Page Generation**
    - Automatically creates structured wiki pages from input data
-   - Handles both products (pd_*) and processes (ps_*)
-   - Preserves relationships between products and processes
-   - Maintains consistent formatting with proper wiki syntax
+   - Handles both products (pd_) and processes (ps_)
 
 2. **Inconsistency Detection**
    - Analyzes process files for structural inconsistencies
