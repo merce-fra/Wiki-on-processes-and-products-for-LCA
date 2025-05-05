@@ -1,0 +1,6 @@
+**Product: pd_ics**
+
+__List of processes__
+  * Ecoinvent: market for integrated_circuit_logic_type | GLO
+
+__May be similar to the following products__

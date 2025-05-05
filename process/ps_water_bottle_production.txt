@@ -1,0 +1,31 @@
+**Process: ps_water_bottle_production**
+
+__Characteristics__
+
+  * Database: Water bottle LCA
+  * Location: RER
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_water_bottle]] - Quantity: 1 unit
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_aluminium,_wrought_alloy]] - Quantity: 0.33 kilogram - Database: ecoinvent-391-cutoff 
+  * [[product:pd_impact_extrusion_of_aluminium,_deformation_stroke]] - Quantity: 0.33 kilogram - Database: ecoinvent-391-cutoff 
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+
+
+__Biosphere Flow__
+
+  * [[biosphere:bp_Carbon_dioxide,_fossil]] - Quantity: 0.1 kilogram - Database: biosphere3
+
+
+__Information__

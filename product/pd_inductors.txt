@@ -1,0 +1,6 @@
+**Product: pd_inductors**
+
+__List of processes__
+  * Ecoinvent: market for inductor_low_value_multilayer_chip | GLO
+
+__May be similar to the following products__

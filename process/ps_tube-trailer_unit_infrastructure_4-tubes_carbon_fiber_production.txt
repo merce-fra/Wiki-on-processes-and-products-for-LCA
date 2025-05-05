@@ -1,0 +1,31 @@
+**Process: ps_tube-trailer_unit_infrastructure_4-tubes_carbon_fiber_production**
+
+__Characteristics__
+
+  * Database: hydrogen_demo
+  * Location: GLO
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_tube-trailer_unit_infrastructure_4-tubes_carbon_fiber]] - Quantity: None unit
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_carbon_fibre_reinforced_plastic,_injection_moulded]] - Quantity: 9808 kilogram - Database: ev391cutoff 
+  * [[product:pd_polyethylene,_high_density,_granulate]] - Quantity: 1120 kilogram - Database: ev391cutoff 
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+
+
+__Biosphere Flow__
+
+
+
+__Information__
+  * Source file: lci_rawdata_import_corrected.xlsx

@@ -1,0 +1,6 @@
+**Product: pd_electrolytic_capacitors**
+
+__List of processes__
+  * Ecoinvent: market for capacitor_electrolyte_type_<2cm_height | GLO
+
+__May be similar to the following products__

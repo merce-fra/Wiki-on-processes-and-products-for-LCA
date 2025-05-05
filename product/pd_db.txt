@@ -1,0 +1,30 @@
+End products or processes:
+  *[[pd_gpu]]
+  *[[pd_installation_and_usage_of_private_mobil_network_for_one_year]]
+
+Downstream:
+  *[[pd_drinking_1_liter_from_a_water_bottle]]
+  *[[pd_water_bottle]]
+
+Midstream:
+  *[[pd_hydrogen_production_gaseous_200_bar_from_smr_natural_gas]]
+  *[[pd_tube-trailer_unit_infrastructure_4-tubes_carbon_fiber]]
+
+Upstream:
+
+To be classified:
+  *[[pd_active_it_equipement_ran]]
+  *[[pd_connectors]]
+  *[[pd_core_network_1]]
+  *[[pd_db]]
+  *[[pd_die]]
+  *[[pd_electrolytic_capacitors]]
+  *[[pd_ics]]
+  *[[pd_inductors]]
+  *[[pd_integrated_circuits]]
+  *[[pd_memory_ics]]
+  *[[pd_mobile_site_ran]]
+  *[[pd_passive_it_equipement_ran]]
+  *[[pd_pcb]]
+  *[[pd_smd]]
+

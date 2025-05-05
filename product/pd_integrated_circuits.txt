@@ -1,0 +1,6 @@
+**Product: pd_integrated_circuits**
+
+__List of processes__
+  * Ecoinvent: market for integrated_circuit_memory_type | GLO
+
+__May be similar to the following products__

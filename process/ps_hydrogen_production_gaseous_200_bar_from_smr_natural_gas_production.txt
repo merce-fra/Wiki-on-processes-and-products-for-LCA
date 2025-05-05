@@ -1,0 +1,67 @@
+**Process: ps_hydrogen_production_gaseous_200_bar_from_smr_natural_gas_production**
+
+__Characteristics__
+
+  * Database: hydrogen_demo
+  * Location: RER
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_hydrogen_production_gaseous_200_bar_from_smr_natural_gas]] - Quantity: None megajoule
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_natural_gas,_high_pressure]] - Quantity: 0.03799059151296909 cubic meter - Database: ev391cutoff 
+  * [[product:pd_liquid_storage_tank,_chemicals,_organics]] - Quantity: 2.1219e-11 unit - Database: ev391cutoff 
+  * [[product:pd_chemical_factory,_organics]] - Quantity: 4.456933262302334e-12 unit - Database: ev391cutoff 
+  * [[product:pd_water,_deionised]] - Quantity: 0.03692352384037154 kilogram - Database: ev391cutoff 
+  * [[product:pd_electricity,_high_voltage]] - Quantity: -0.0011513629946635143 kilowatt hour - Database: ev391cutoff 
+  * [[product:pd_diethanolamine]] - Quantity: 0 kilogram - Database: ev391cutoff 
+  * [[product:pd_aluminium_oxide,_metallurgical]] - Quantity: 4.439399999999999e-06 kilogram - Database: ev391cutoff 
+  * [[product:pd_molybdenum_trioxide]] - Quantity: 1.39e-07 kilogram - Database: ev391cutoff 
+  * [[product:pd_zinc_oxide]] - Quantity: 3.095e-06 kilogram - Database: ev391cutoff 
+  * [[product:pd_quicklime,_milled,_packed]] - Quantity: 4e-07 kilogram - Database: ev391cutoff 
+  * [[product:pd_silica_sand]] - Quantity: 9.659999999999999e-08 kilogram - Database: ev391cutoff 
+  * [[product:pd_chromium_oxide,_flakes]] - Quantity: 3e-07 kilogram - Database: ev391cutoff 
+  * [[product:pd_copper_oxide]] - Quantity: 3.02e-06 kilogram - Database: ev391cutoff 
+  * [[product:pd_magnesium_oxide]] - Quantity: 2.33e-07 kilogram - Database: ev391cutoff 
+  * [[product:pd_portafer]] - Quantity: 2.603e-06 kilogram - Database: ev391cutoff 
+  * [[product:pd_nickel,_class_1]] - Quantity: 1.6910012049805864e-06 kilogram - Database: ev391cutoff 
+  * [[product:pd_zeolite,_powder]] - Quantity: 7.35751288389381e-06 kilogram - Database: ev391cutoff 
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+
+
+__Biosphere Flow__
+
+  * [[biosphere:bp_Water,_cooling,_unspecified_natural_origin]] - Quantity: 0.003169835798056769 cubic meter - Database: biosphere3
+  * [[biosphere:bp_Carbon_dioxide,_fossil]] - Quantity: 0.07462426398343387 kilogram - Database: biosphere3
+  * [[biosphere:bp_Carbon_dioxide,_from_soil_or_biomass_stock]] - Quantity: 0 kilogram - Database: biosphere3
+  * [[biosphere:bp_Acetaldehyde]] - Quantity: 1.7432660455784118e-10 kilogram - Database: biosphere3
+  * [[biosphere:bp_Acetic_acid]] - Quantity: 2.6148990683676173e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Benzene]] - Quantity: 6.973229797556433e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Benzo(a)pyrene]] - Quantity: 1.7432660455784115e-12 kilogram - Database: biosphere3
+  * [[biosphere:bp_Butane]] - Quantity: 1.2203193549534457e-07 kilogram - Database: biosphere3
+  * [[biosphere:bp_Carbon_monoxide,_fossil]] - Quantity: 3.6609249418117787e-07 kilogram - Database: biosphere3
+  * [[biosphere:bp_Dinitrogen_monoxide]] - Quantity: 1.7432660455784116e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Formaldehyde]] - Quantity: 1.7432660455784116e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Mercury_II]] - Quantity: 5.2299637519780225e-12 kilogram - Database: biosphere3
+  * [[biosphere:bp_Methane,_fossil]] - Quantity: 3.4866977063996105e-07 kilogram - Database: biosphere3
+  * [[biosphere:bp_Nitrogen_oxides]] - Quantity: 3.1205224045970388e-06 kilogram - Database: biosphere3
+  * [[biosphere:bp_PAH,_polycyclic_aromatic_hydrocarbons]] - Quantity: 1.7432660455784116e-09 kilogram - Database: biosphere3
+  * [[biosphere:bp_Particulate_Matter,_<_2.5_um]] - Quantity: 3.4866977063996105e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Pentane]] - Quantity: 2.0920517468883236e-07 kilogram - Database: biosphere3
+  * [[biosphere:bp_Propane]] - Quantity: 3.4866977063996105e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Propionic_acid]] - Quantity: 3.4866977063996103e-09 kilogram - Database: biosphere3
+  * [[biosphere:bp_Sulfur_dioxide]] - Quantity: 9.588294481166838e-08 kilogram - Database: biosphere3
+  * [[biosphere:bp_Toluene]] - Quantity: 3.4866977063996105e-08 kilogram - Database: biosphere3
+
+
+__Information__
+  * Source file: lci_rawdata_import_corrected.xlsx

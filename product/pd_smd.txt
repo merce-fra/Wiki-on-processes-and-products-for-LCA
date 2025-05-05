@@ -1,0 +1,6 @@
+**Product: pd_smd**
+
+__List of processes__
+  * Ecoinvent: market for capacitor_for_surface-mounting | GLO
+
+__May be similar to the following products__

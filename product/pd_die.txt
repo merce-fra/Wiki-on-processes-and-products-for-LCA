@@ -1,0 +1,6 @@
+**Product: pd_die**
+
+__List of processes__
+  * Ecoinvent: market for wafer_fabricated_for_integrated_circuit | GLO
+
+__May be similar to the following products__
