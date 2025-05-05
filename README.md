@@ -3,7 +3,7 @@
 This project consists of two main parts:
 
 1. **The Wiki**  
-   A structured Wiki system to organize **products and processes**, that can be found in the public domain, to be used for Life Cycle Assessment (LCA). It provides a centralized repository for organizing and accessing information about products and processes, including their relationships and characteristics.
+   A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for Life Cycle Assessment (LCA). It provides a centralized repository for organizing and accessing information about products and processes, including their relationships and characteristics.
    You can access it directly in the [wiki of this github](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) or install it on dokuwiki.
    
    The pages are orginally generated in the dokuwiki format and then automatically converted to the github wiki format (markdown) with the script "convert_to_github_wiki.py".
