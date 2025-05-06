@@ -29,9 +29,7 @@ To install the dokuwiki version of the project, place the files in the `\dokuwik
 
 # Overview of the AI-Enhanced Data Management System
 
-This tool provides AI-assisted management of Life Cycle Assessment (LCA) data within a DokuWiki system. It uses the Together AI API with the DeepSeek V3 model to process and organize product and process information.
-
-## Main Features
+This tool provides AI-assisted management of Life Cycle Assessment (LCA) data within a DokuWiki system. It uses the Together AI API (can be replaced by another other API in the `settings.py` file) with the DeepSeek V3 model to process and organize product and process information.
 
 1. **Product and Process Page Generation** `generate_page.py`
    - Automatically creates structured Wiki pages from input data
