@@ -5,8 +5,6 @@
 # Author: [Vincent Corlay - Mitsubishi Electric R&D Centre Europe]
 # -----------------------------------------------------------------------------
 
-
-
 import os
 import yaml
 import requests

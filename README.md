@@ -23,6 +23,20 @@ This project consists of three main parts:
 Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) to access the Wiki on this gihub.
 
 
+## How to Contribute
+
+You can contribute by:
+- Adding process or product pages (with or without using the python script to import the data).
+- Improving the python scripts to automatically import data.
+
+1. Fork and clone this repo 
+2. Create a new branch and make your changes and commit.
+3. Push your branch: `git push origin your-feature`
+4. Open a Pull Request from your fork
+
+Maintainers will review your proposal.
+If the pages are accepted, maintainers will use the code `convert_to_github_wiki.py` to automatically update the Wiki of this GitHub.
+
 # Installation on Dokuwiki
 
 To install the dokuwiki version of the project, place the files in the `\dokuwiki\data\pages\` directory of your DokuWiki installation.
