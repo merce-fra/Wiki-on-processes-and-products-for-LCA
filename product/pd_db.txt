@@ -1,8 +1,16 @@
 End products or processes:
-  *[[pd_gpu]]
+  *[[pd_dell_3620_computer]]
+  *[[pd_drinking_1_liter_from_a_water_bottle]]
+  *[[pd_raspberry_pi4_revb]]
 
 Downstream:
-  *[[pd_drinking_1_liter_from_a_water_bottle]]
+  *[[pd_dell_3620_chassis]]
+  *[[pd_dell_3620_components]]
+  *[[pd_gpu]]
+  *[[pd_ram]]
+  *[[pd_raspberry_pi4_revb_chassis]]
+  *[[pd_raspberry_pi4_revb_components]]
+  *[[pd_used_desktop_computer]]
   *[[pd_water_bottle]]
 
 Midstream:
@@ -14,10 +22,6 @@ Upstream:
 To be classified:
   *[[pd_connectors]]
   *[[pd_db]]
-  *[[pd_dell_3620_chassis]]
-  *[[pd_dell_3620_components]]
-  *[[pd_dell_3620_computer]]
-  *[[pd_dell_3620_computer_loubet]]
   *[[pd_die]]
   *[[pd_electrolytic_capacitors]]
   *[[pd_ics]]
@@ -31,15 +35,10 @@ To be classified:
   *[[pd_power_supply_unit]]
   *[[pd_printed_circuit_board]]
   *[[pd_processor]]
-  *[[pd_ram]]
-  *[[pd_raspberry_pi4_revb]]
-  *[[pd_raspberry_pi4_revb_chassis]]
-  *[[pd_raspberry_pi4_revb_components]]
   *[[pd_remaining_connectors]]
   *[[pd_resistor]]
   *[[pd_smd]]
   *[[pd_tap_water]]
-  *[[pd_used_desktop_computer]]
   *[[pd_wafer]]
   *[[pd_waste_packaging_paper]]
   *[[pd_waste_polypropylene]]

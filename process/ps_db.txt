@@ -1,30 +1,17 @@
 End products or processes:
+  *[[ps_dell_3620_computer_loubet]]
+  *[[ps_raspberry_pi4_revb]]
 
 Downstream:
-  *[[ps_drinking_water_from_a_bottle]]
-  *[[ps_water_bottle_production]]
-
-Midstream:
-  *[[ps_hydrogen_production_gaseous_200_bar_from_smr_natural_gas_production]]
-  *[[ps_tube-trailer_unit_infrastructure_4-tubes_carbon_fiber_production]]
-
-Upstream:
-
-To be classified:
   *[[ps_assembly_of_computer]]
-  *[[ps_db]]
-  *[[ps_dell_3620]]
   *[[ps_dell_3620_chassis]]
   *[[ps_dell_3620_components]]
-  *[[ps_dell_3620_computer_loubet]]
-  *[[ps_electricity]]
-  *[[ps_electricity_low_voltage]]
+  *[[ps_drinking_water_from_a_bottle]]
   *[[ps_gpu_loubet]]
   *[[ps_motherboard]]
   *[[ps_packaging_of_computer]]
   *[[ps_production_of_tap_water]]
   *[[ps_ram]]
-  *[[ps_raspberry_pi4_revb]]
   *[[ps_raspberry_pi4_revb_assembly]]
   *[[ps_raspberry_pi4_revb_chassis]]
   *[[ps_raspberry_pi4_revb_components]]
@@ -33,4 +20,16 @@ To be classified:
   *[[ps_raspberry_pi4_revb_transport]]
   *[[ps_raspberry_pi4_revb_use]]
   *[[ps_use_of_computer]]
+  *[[ps_water_bottle_production]]
+
+Midstream:
+  *[[ps_hydrogen_production_gaseous_200_bar_from_smr_natural_gas_production]]
+  *[[ps_tube-trailer_unit_infrastructure_4-tubes_carbon_fiber_production]]
+
+Upstream:
+  *[[ps_electricity]]
+  *[[ps_electricity_low_voltage]]
+
+To be classified:
+  *[[ps_db]]
 
