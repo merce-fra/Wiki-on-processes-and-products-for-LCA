@@ -27,9 +27,9 @@ Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA
 
 To install the dokuwiki version of the project, place the files in the `\dokuwiki\data\pages\` directory of your DokuWiki installation.
 
-# Overview of the AI-Enhanced Data Management System
+# Overview of the AI-based Data Management System
 
-This tool provides AI-assisted management of Life Cycle Assessment (LCA) data within a DokuWiki system. It uses the Together AI API (can be replaced by another other API in the `settings.py` file) with the DeepSeek V3 model to process and organize product and process information.
+This tool provides AI-assisted management of the pages. It uses the Together AI API (can be replaced by another other API in the `settings.py` file) with the DeepSeek V3 model to process and organize product and process information.
 
 1. **Product and Process Page Generation** `generate_page.py`
    - Automatically creates structured Wiki pages from input data
