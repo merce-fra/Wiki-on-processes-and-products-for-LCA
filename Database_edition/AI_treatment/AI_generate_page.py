@@ -15,7 +15,7 @@ import requests
 import json
 from settings import TOGETHER_API_KEY, API_MODEL
 
-base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA"
+base_path = "./" #EDIT THIS PATH IF NEEDED 
     
 
 def load_yaml_file(file_path: str) -> dict:
@@ -47,7 +47,7 @@ def call_together_ai(prompt, model_used=API_MODEL):
 
 def get_source_data(base_path: str) -> str:
     """Read the motherboard data file."""
-    file_path = os.path.join(base_path, "Code_database_edition","source_import", "input_raw_data")
+    file_path = os.path.join(base_path, "Database_edition","source_import", "input_raw_data")
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return f.read()
@@ -231,7 +231,7 @@ def parse_and_create_files(api_response: str, base_path: str):
 def main():
 
     # Load prompt template
-    prompt_path = os.path.join("Code_database_edition","AI_treatment", "prompt", "my_prompt_generate_pages.yaml")
+    prompt_path = os.path.join("Database_edition","AI_treatment", "prompt", "my_prompt_generate_pages.yaml")
     prompt_template = load_yaml_file(prompt_path)
 
     # Get source data
@@ -251,7 +251,7 @@ def main():
     
     if response:
         # Save raw response
-        output_path = os.path.join(base_path, "Code_database_edition","AI_treatment", "output", "generate_pages_analysis.txt")
+        output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "generate_pages_analysis.txt")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(response)

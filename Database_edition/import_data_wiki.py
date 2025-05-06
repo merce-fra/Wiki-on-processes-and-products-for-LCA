@@ -8,17 +8,14 @@
 
 # %%
 from brightway2 import *
-# import pandas as pd
-# import numpy as np
-#from bw2io.importers.exiobase2 import Exiobase22Importer
 import os
 
 # %%
 # Define paths for database files
-base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA" #EDIT THIS PATH
+base_path = "./"  # EDIT THIS PATH IF NEEDED
 
-path = "./Code_database_edition\source_import\Example_bw\excel_importer_example.xlsx"
-#path = r"./Code_database_edition\source_import\network\MASTER_network.xlsx"
+source_file_path = "Database_edition/source_import/Example_bw/lci_rawdata_import_corrected.xlsx"
+path = base_path + source_file_path
 
 imp = ExcelImporter(path) #Brightway import function to import data from Excel files
 

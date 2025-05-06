@@ -12,7 +12,7 @@ import json
 from settings import TOGETHER_API_KEY, API_MODEL
 
 #to be updated
-base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA"
+base_path = "./" #EDIT THIS PATH IF NEEDED 
 
 def load_yaml_file(file_path: str) -> dict:
     """Load and parse a YAML file."""
@@ -143,7 +143,7 @@ def update_product_files(similarities: dict, base_path: str):
 
 def main():
     # Load prompt template
-    prompt_path = os.path.join("Code_database_edition","AI_treatment", "prompt", "my_prompt_similarity.yaml")
+    prompt_path = os.path.join("Database_edition","AI_treatment", "prompt", "my_prompt_similarity.yaml")
     prompt_template = load_yaml_file(prompt_path)
 
     # Get and concatenate product files
@@ -162,7 +162,7 @@ def main():
     
     if response:
         # Save raw response
-        output_path = os.path.join(base_path, "Code_database_edition","AI_treatment", "output", "product_analysis.txt")
+        output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "product_analysis.txt")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(response)

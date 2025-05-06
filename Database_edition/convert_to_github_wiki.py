@@ -9,7 +9,7 @@ import os
 import re
 
 # Define base_path as a global variable
-base_path = r"c:\xampp\htdocs\dokuwiki\data" #REPLACE WITH YOUR PATH
+base_path = "./" #EDIT THIS PATH IF NEEDED 
 
 def clean_link_and_namespace(page, namespace):
     # Clean up page name and namespace

@@ -11,7 +11,7 @@ import requests
 import json
 from settings import TOGETHER_API_KEY, API_MODEL
 
-base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA"
+base_path = "./" #EDIT THIS PATH IF NEEDED 
 
 def load_yaml_file(file_path: str) -> dict:
     """Load and parse a YAML file."""

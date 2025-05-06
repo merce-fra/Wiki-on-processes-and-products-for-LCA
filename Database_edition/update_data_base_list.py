@@ -9,7 +9,7 @@
 import os
 
 # Define paths for database files
-base_path = r"c:\xampp\htdocs\dokuwiki\data\Wiki-on-processes-and-products-for-LCA" #edit this path
+base_path = "./" #EDIT THIS PATH IF NEEDED 
 
 product_path = os.path.join(base_path, "product")
 process_path = os.path.join(base_path, "process")
