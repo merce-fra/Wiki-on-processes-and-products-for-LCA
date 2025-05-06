@@ -1,0 +1,7 @@
+**Product: pd_printed_circuit_board**
+
+__List of processes__
+  * Ecoinvent: market for printed wiring board, for surface mounting, Pb free surface | GLO
+  * Ecoinvent: market for mounting, surface mount technology, Pb-free solder | GLO
+
+__May be similar to the following products__

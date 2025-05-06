@@ -1,0 +1,6 @@
+**Product: pd_power_supply_unit**
+
+__List of processes__
+  * Ecoinvent: market for power supply unit, for desktop computer | GLO
+
+__May be similar to the following products__

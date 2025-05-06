@@ -1,0 +1,6 @@
+**Product: pd_remaining_connectors**
+
+__List of processes__
+  * Ecoinvent: market for electric connector, peripheral type buss | GLO
+
+__May be similar to the following products__

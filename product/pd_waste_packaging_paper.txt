@@ -1,0 +1,6 @@
+**Product: pd_waste_packaging_paper**
+
+__List of processes__
+  * Ecoinvent: market for waste packaging paper | FR
+
+__May be similar to the following products__

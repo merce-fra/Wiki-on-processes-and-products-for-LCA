@@ -1,0 +1,22 @@
+**Process: ps_raspberry_pi4_revb_use**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+
+Process:
+  * [[process:ps_electricity_low_voltage_fr]] - Quantity: 48.62 kWh - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From paper: Life cycle assessment of ICT in higher education: a comparison between desktop and single-board computers
+  Authors: Philippe Loubet, Adrien Vincent, Annabelle Collin, Corinne Dejous, Anthony Ghiotto, Christophe Jego

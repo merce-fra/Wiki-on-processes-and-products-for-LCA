@@ -1,0 +1,6 @@
+**Product: pd_wafer**
+
+__List of processes__
+  * Ecoinvent: market for wafer, fabricated, for integrated circuit | GLO
+
+__May be similar to the following products__

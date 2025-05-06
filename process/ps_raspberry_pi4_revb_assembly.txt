@@ -1,0 +1,24 @@
+**Process: ps_raspberry_pi4_revb_assembly**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+
+Process:
+  * [[process:ps_electricity_medium_voltage]] - Quantity: 0.0165 kWh - Database: Not specified
+  * [[process:ps_production_of_tap_water]] - Quantity: 9.6 L - Database: Not specified
+  * [[process:ps_treatment_of_waste_water]] - Quantity: 9.6 L - Database: Not specified
+
+Chimaera (to be classified):
+
+__Biosphere Flow__
+
+__Information__
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From paper: Life cycle assessment of ICT in higher education: a comparison between desktop and single-board computers
+  Authors: Philippe Loubet, Adrien Vincent, Annabelle Collin, Corinne Dejous, Anthony Ghiotto, Christophe Jego

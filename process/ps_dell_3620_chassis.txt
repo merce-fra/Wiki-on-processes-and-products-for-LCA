@@ -1,0 +1,36 @@
+**Process: ps_dell_3620_chassis**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_dell_3620_chassis]] - Quantity: None unit
+
+**Consumption**
+
+Product:
+  * [[product:pd_steel_low-alloyed_hot_rolled]] - Quantity: 5.0 kg - Database: Not specified
+  * [[product:pd_sheet_rolling_steel]] - Quantity: 5.0 kg - Database: Not specified
+  * [[product:pd_powder_coat_steel]] - Quantity: 0.53 m2 - Database: Not specified
+  * [[product:pd_acrylonitrile-butadiene-styrene_copolymer]] - Quantity: 0.15 kg - Database: Not specified
+  * [[product:pd_stretch_blow_moulding]] - Quantity: 0.15 kg - Database: Not specified
+  * [[product:pd_cable_ribbon_cable_20-pin_with_plugs]] - Quantity: 0.05 kg - Database: Not specified
+  * [[product:pd_cable_connector_for_computer_without_plugs]] - Quantity: 1.80 m - Database: Not specified
+  * [[product:pd_plug_inlet_and_outlet_for_computer_cable]] - Quantity: 1.0 unit - Database: Not specified
+  * [[product:pd_cable_network_cable_category_5_without_plugs]] - Quantity: 3.0 m - Database: Not specified
+  * [[product:pd_plug_inlet_and_outlet_for_network_cable]] - Quantity: 1.0 unit - Database: Not specified
+  * [[product:pd_desktop_120mm_air-cooling_system]] - Quantity: 1.0 unit - Database: Not specified
+  * [[product:pd_120mm_diameter_fan]] - Quantity: 1.0 unit - Database: Not specified
+
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From paper: Life cycle assessment of ICT in higher education: a comparison between desktop and single-board computers
+  Authors: Philippe Loubet, Adrien Vincent, Annabelle Collin, Corinne Dejous, Anthony Ghiotto, Christophe Jego

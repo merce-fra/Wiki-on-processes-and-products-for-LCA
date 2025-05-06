@@ -1,0 +1,19 @@
+**Process: ps_electricity**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+
+Process:
+  * Ecoinvent: market group for electricity, medium voltage | CN
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__

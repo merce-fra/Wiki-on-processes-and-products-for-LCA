@@ -1,0 +1,6 @@
+**Product: pd_dell_3620_computer**
+
+__List of processes__
+  * [[process:ps_dell_3620_computer_loubet]]
+
+__May be similar to the following products__

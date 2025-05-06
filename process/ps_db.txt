@@ -11,6 +11,26 @@ Midstream:
 Upstream:
 
 To be classified:
+  *[[ps_assembly_of_computer]]
   *[[ps_db]]
+  *[[ps_dell_3620]]
+  *[[ps_dell_3620_chassis]]
+  *[[ps_dell_3620_components]]
+  *[[ps_dell_3620_computer_loubet]]
+  *[[ps_electricity]]
+  *[[ps_electricity_low_voltage]]
   *[[ps_gpu_loubet]]
+  *[[ps_motherboard]]
+  *[[ps_packaging_of_computer]]
+  *[[ps_production_of_tap_water]]
+  *[[ps_ram]]
+  *[[ps_raspberry_pi4_revb]]
+  *[[ps_raspberry_pi4_revb_assembly]]
+  *[[ps_raspberry_pi4_revb_chassis]]
+  *[[ps_raspberry_pi4_revb_components]]
+  *[[ps_raspberry_pi4_revb_end_of_life]]
+  *[[ps_raspberry_pi4_revb_packaging]]
+  *[[ps_raspberry_pi4_revb_transport]]
+  *[[ps_raspberry_pi4_revb_use]]
+  *[[ps_use_of_computer]]
 

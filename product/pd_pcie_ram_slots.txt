@@ -1,0 +1,6 @@
+**Product: pd_pcie_ram_slots**
+
+__List of processes__
+  * Ecoinvent: market for electric connector, peripheral component interconnect buss | GLO
+
+__May be similar to the following products__

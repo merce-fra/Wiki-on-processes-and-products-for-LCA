@@ -1,0 +1,6 @@
+**Product: pd_processor**
+
+__List of processes__
+  * Ecoinvent: market for integrated circuit, logic type | integrated circuit, logic type | GLO
+
+__May be similar to the following products__
