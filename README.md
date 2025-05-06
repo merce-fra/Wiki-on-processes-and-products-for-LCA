@@ -11,7 +11,7 @@ This project consists of three main parts:
    Note that the GitHub Wiki is stored in a separate repository, which can be cloned from: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. Again, it is recommanded to modify the pages in the `process/` and `product/` folders of this repo and then automatically generate the files in the folder `Wiki-on-processes-and-products-for-LCA.wiki`.
 
 2. **The import function for Brightway-formatted data**  
-   The script `import_data_wiki.py` (folder code_database_edition) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folder `process/` and `product/` .
+   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folder `process/` and `product/` .
 
    If new pages are added in the folders `process/` and `product/`, the `ps_db.txt` and `pd_db.txt` files (where all the pages are listed) should be updated by running the code `update_database_list.py`.
 
@@ -33,45 +33,19 @@ This tool provides AI-assisted management of Life Cycle Assessment (LCA) data wi
 
 ## Main Features
 
-1. **Product and Process Page Generation**
+1. **Product and Process Page Generation** `generate_page.py`
    - Automatically creates structured Wiki pages from input data
    - Handles both products (pd_) and processes (ps_)
 
-2. **Inconsistency Detection**
+2. **Inconsistency Detection** `inconsistency_send_request_API.py`
    - Analyzes process files for structural inconsistencies
    - Identifies missing sections or formatting issues
    - Suggests corrections while preserving original content
    - Adds inconsistency reports to affected files
 
-3. **Product Similarity Analysis**
+3. **Product Similarity Analysis** `similarity_send_request_API.py`
    - Identifies similar products in the database
    - Adds similarity information to product pages
    - Preserves existing similarity relationships
    - Provides explanations for similarity matches
-
-### Usage Example
-
-1. **Adding New Data**
-```bash
-python generate_page.py
-```
-- Reads source data
-- Creates structured Wiki pages
-- Maintains existing relationships
-
-2. **Checking Consistency**
-```bash
-python inconsistency_send_request_API.py
-```
-- Analyzes all process files
-- Reports formatting issues
-- Suggests corrections
-
-3. **Finding Similar Products**
-```bash
-python similarity_send_request_API.py
-```
-- Analyzes product relationships
-- Updates similarity sections
-- Preserves existing connections
 
