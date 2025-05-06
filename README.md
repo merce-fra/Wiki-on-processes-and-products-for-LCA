@@ -8,7 +8,7 @@ This project consists of three main parts:
    
    The pages are orginally generated in the dokuwiki (.txt) format and then automatically converted to the GitHub Wiki format (markdown) with the script `convert_to_github_wiki.py`. The source files for the pages are located in the `process/` and `product/` folders of this repository. 
    
-   Note that the GitHub Wiki is stored in a separate repository, which can be cloned from: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. Again, it is recommanded to modify the pages in the `process/` and `product/` folders of this repo and then automatically generate the files in the folder `Wiki-on-processes-and-products-for-LCA.wiki`.
+   Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. Again, it is recommanded to modify the pages in the `process/` and `product/` folders of this repo and then automatically generate the files in the folder `Wiki-on-processes-and-products-for-LCA.wiki`.
 
 2. **The import function for Brightway-formatted data**  
    The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folder `process/` and `product/` .
@@ -22,8 +22,7 @@ This project consists of three main parts:
 
 Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) to access the Wiki on this gihub.
 
-
-## How to Contribute
+# How to contribute
 
 You can contribute by:
 - Adding process or product pages (with or without using the python script to import the data). The pages should be added in the dokuwiki format.

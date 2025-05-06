@@ -188,7 +188,7 @@ for record in imp.data:
                 if my_class == "product":
                     content += f"  * [[product:pd_{exchange['reference product'].replace(' ', '_')}]] - Quantity: {exchange['amount']} {exchange['unit']} - Database: {exchange['database']} \n"
         #Process
-        content += "Process:\n\n"
+        content += "\nProcess:\n\n"
         for exchange in exchanges:
             try:
                 my_class = exchange['class']
@@ -200,7 +200,7 @@ for record in imp.data:
             if exchange['type'] == "technosphere":
                 if my_class == "process":
                     content += f"  * [[process:ps_{exchange['name'].replace(' ', '_')}]] - Quantity: {exchange['amount']} {exchange['unit']} - Database: {exchange['database']} \n"
-        content += "Chimaera (to be classified - put in process by default):\n\n"
+        content += "\nChimaera (to be classified):\n\n"
         for exchange in exchanges:
             try:
                 my_class = exchange['class']

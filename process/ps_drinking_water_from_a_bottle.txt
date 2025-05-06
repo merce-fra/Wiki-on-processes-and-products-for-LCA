@@ -17,6 +17,7 @@ Product:
 
   * [[product:pd_water_bottle]] - Quantity: 0.005 unit - Database: Water bottle LCA 
   * [[product:pd_tap_water]] - Quantity: 1 kilogram - Database: ecoinvent-391-cutoff 
+
 Process:
 
 Chimaera (to be classified - put in process by default):
@@ -28,3 +29,5 @@ __Biosphere Flow__
 
 
 __Information__
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From brightway example "excel_importer_example.xlsx"

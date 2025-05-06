@@ -4,6 +4,7 @@ __Characteristics__
 
   * Database: hydrogen_demo
   * Location: RER
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
 
 __Technosphere Flow__
 
@@ -32,6 +33,7 @@ Product:
   * [[product:pd_portafer]] - Quantity: 2.603e-06 kilogram - Database: ev391cutoff 
   * [[product:pd_nickel,_class_1]] - Quantity: 1.6910012049805864e-06 kilogram - Database: ev391cutoff 
   * [[product:pd_zeolite,_powder]] - Quantity: 7.35751288389381e-06 kilogram - Database: ev391cutoff 
+
 Process:
 
 Chimaera (to be classified - put in process by default):
@@ -64,4 +66,5 @@ __Biosphere Flow__
 
 
 __Information__
-  * Source file: lci_rawdata_import_corrected.xlsx
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From brightway example "lci_rawdata_import_corrected.xlsx"

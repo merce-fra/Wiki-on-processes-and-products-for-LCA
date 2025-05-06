@@ -17,6 +17,7 @@ Product:
 
   * [[product:pd_aluminium,_wrought_alloy]] - Quantity: 0.33 kilogram - Database: ecoinvent-391-cutoff 
   * [[product:pd_impact_extrusion_of_aluminium,_deformation_stroke]] - Quantity: 0.33 kilogram - Database: ecoinvent-391-cutoff 
+
 Process:
 
 Chimaera (to be classified - put in process by default):
@@ -29,3 +30,5 @@ __Biosphere Flow__
 
 
 __Information__
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From brightway example "excel_importer_example.xlsx"
