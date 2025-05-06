@@ -26,11 +26,12 @@ Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA
 ## How to Contribute
 
 You can contribute by:
-- Adding process or product pages (with or without using the python script to import the data).
+- Adding process or product pages (with or without using the python script to import the data). The pages should be added in the dokuwiki format.
 - Improving the python scripts to automatically import data.
 
+The standard way to proceed is the following:
 1. Fork and clone this repo 
-2. Create a new branch and make your changes and commit.
+2. Create a new branch and make your changes and commit
 3. Push your branch: `git push origin your-feature`
 4. Open a Pull Request from your fork
 
