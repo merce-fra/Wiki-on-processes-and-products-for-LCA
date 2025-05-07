@@ -11,12 +11,12 @@ This project consists of three main parts:
    Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. Again, it is recommanded to modify the pages in the `process/` and `product/` folders of this repo and then automatically generate the files in the folder `Wiki-on-processes-and-products-for-LCA.wiki` using the script `convert_to_github_wiki.py`.
 
 2. **The import function for Brightway-formatted data**  
-   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folder `process/` and `product/` .
+   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folders `process/` and `product/` .
 
-   If new pages are added in the folders `process/` and `product/`, the `ps_db.txt` and `pd_db.txt` files (where all the pages are listed) should be updated by running the code `update_database_list.py`.
+   If new pages are added in the folders `process/` and `product/`, the `ps_db.txt` and `pd_db.txt` files (where all the pages are listed) should be updated by running the script `update_database_list.py`.
 
 3. **AI-based Wiki Edition**  
-   This tool integrates AI to assist in the management and editing of the DokuWiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
+   This tool integrates AI to assist in the management of the Wiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
 
 # Accessing the Wiki (on this GitHub) 
 
@@ -25,7 +25,7 @@ Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA
 # How to contribute
 
 You can contribute by:
-- Adding process or product pages (with or without using the python script to import the data). The pages should be added in the dokuwiki format.
+- Adding process or product pages (with or without using the python script to import the data). The pages should be added in the dokuwiki format (see the pages in the `process/` and `product/` folders of this repository).
 - Improving the python scripts to automatically import data.
 
 The standard way to proceed is the following:
@@ -47,7 +47,6 @@ This tool provides AI-assisted management of the pages. It uses the Together AI 
 
 1. **Product and Process Page Generation** `generate_page.py`
    - Automatically creates structured Wiki pages from input data
-   - Handles both products (pd_) and processes (ps_)
 
 2. **Inconsistency Detection** `inconsistency_send_request_API.py`
    - Analyzes process files for structural inconsistencies
