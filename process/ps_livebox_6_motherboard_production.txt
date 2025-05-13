@@ -9,7 +9,7 @@ __Technosphere Flow__
 
 **Production**
 
-  * [[product:pd_livebox_6_moatherboard]] - Quantity: None unit
+  * [[product:pd_livebox_6_motherboard]] - Quantity: None unit
 
 **Consumption**
 

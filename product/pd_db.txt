@@ -10,7 +10,7 @@ Downstream:
   *[[pd_gpu]]
   *[[pd_livebox_6_connectivity_components]]
   *[[pd_livebox_6_electronics_and_circuits_components]]
-  *[[pd_livebox_6_moatherboard]]
+  *[[pd_livebox_6_motherboard]]
   *[[pd_livebox_6_radioboard]]
   *[[pd_livebox_6_thermal_dissipation_components]]
   *[[pd_livebox_6_user_interface]]
