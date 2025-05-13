@@ -11,7 +11,7 @@ __Technosphere Flow__
 **Consumption**
 
 Product:
-  * [[product:pd_motherboard]] - Quantity: 1 unit - Database: Not specified
+  * [[product:pd_dell_3620_motherboard]] - Quantity: 1 unit - Database: Not specified
   * [[product:pd_gpu]] - Quantity: 1 unit - Database: Not specified
   * [[product:pd_ram]] - Quantity: 1 unit - Database: Not specified
   * [[product:pd_hdd]] - Quantity: 1 unit - Database: Not specified

@@ -21,6 +21,7 @@ Product:
   * [[product:pd_NAND_flash_memory]] - Quantity: 4 unit - Database: Deux Ex Silicium 
   * [[product:pd_Board-to-board_connectors]] - Quantity: 1 unit - Database: Deux Ex Silicium 
   * [[product:pd_Shielding_enclosure]] - Quantity: 1 unit - Database: Deux Ex Silicium 
+  * [[product:pd_printed_circuit_board]] - Quantity: - Database: Deux Ex Silicium 
 
 Process:
 

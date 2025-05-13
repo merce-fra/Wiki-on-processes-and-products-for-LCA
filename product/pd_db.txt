@@ -7,6 +7,7 @@ End products or processes:
 Downstream:
   *[[pd_dell_3620_chassis]]
   *[[pd_dell_3620_components]]
+  *[[pd_pd_dell_3620_components]]
   *[[pd_gpu]]
   *[[pd_livebox_6_connectivity_components]]
   *[[pd_livebox_6_electronics_and_circuits_components]]
@@ -35,7 +36,6 @@ To be classified:
   *[[pd_inductors]]
   *[[pd_integrated_circuits]]
   *[[pd_memory_ics]]
-  *[[pd_motherboard]]
   *[[pd_pcb]]
   *[[pd_pcie_ram_slots]]
   *[[pd_plug_inlet_and_outlet_for_computer_cable]]
