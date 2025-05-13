@@ -39,5 +39,6 @@ Upstream:
 
 To be classified:
   *[[ps_db]]
+  *[[ps_dell_3620_motherboard_loubet]]
   *[[ps_motherboard_loubet]]
 

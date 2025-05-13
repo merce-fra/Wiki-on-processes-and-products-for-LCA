@@ -9,7 +9,7 @@
 import os
 
 # Define paths for database files
-base_path = "./Wiki-on-processes-and-products-for-LCA" #EDIT THIS PATH IF NEEDED 
+base_path = "./" #EDIT THIS PATH IF NEEDED 
 
 product_path = os.path.join(base_path, "product")
 process_path = os.path.join(base_path, "process")

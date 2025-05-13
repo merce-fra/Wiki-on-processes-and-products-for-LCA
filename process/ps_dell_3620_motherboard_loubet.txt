@@ -1,4 +1,4 @@
-**Process: ps_motherboard_loubet**
+**Process: ps_dell_3620_motherboard_loubet**
 
 __Characteristics__
 
@@ -6,7 +6,7 @@ __Characteristics__
 __Technosphere Flow__
 
 **Production**
-  * [[product:pd_motherboard]] - Quantity: None unit
+  * [[product:pd_dell_3620_motherboard]] - Quantity: None unit
 
 **Consumption**
 
