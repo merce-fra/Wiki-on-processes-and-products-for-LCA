@@ -1,0 +1,35 @@
+**Process: ps_livebox_6_electronics_and_circuits_components_list**
+
+__Characteristics__
+
+  * Database: Deux Ex Silicium
+  * Location: GLO
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_livebox_6_electronics_and_circuits_components]] - Quantity: None unit
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_Livebox_6_Motherboard]] - Quantity: 1 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Livebox_6_Radioboard]] - Quantity: 1 unit - Database: Deux Ex Silicium 
+
+Process:
+
+
+Chimaera (to be classified):
+
+
+
+__Biosphere Flow__
+
+
+
+__Information__
+  * From Youtube videoby Deux Ex Silicium: Dans les entrailles de la LIVEBOX 6 : analyses, mesures et décorticage de son électronique, link: https://www.youtube.com/watch?v=VryPNmlxxas
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * Source file: Livebox_6.xlsx

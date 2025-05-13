@@ -14,7 +14,8 @@ import os
 # Define paths for database files
 base_path = "./"  # EDIT THIS PATH IF NEEDED
 
-source_file_path = "Database_edition/source_import/Example_bw/lci_rawdata_import_corrected.xlsx"
+source_file_path = "Database_edition/source_import/Example_bw/Livebox_6.xlsx"  
+#lci_rawdata_import_corrected.xlsx"
 path = base_path + source_file_path
 
 imp = ExcelImporter(path) #Brightway import function to import data from Excel files

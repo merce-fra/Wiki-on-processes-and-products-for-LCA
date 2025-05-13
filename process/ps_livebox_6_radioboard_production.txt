@@ -1,0 +1,41 @@
+**Process: ps_livebox_6_radioboard_production**
+
+__Characteristics__
+
+  * Database: Deux Ex Silicium
+  * Location: GLO
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_livebox_6_radioboard]] - Quantity: None unit
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_Broadcom_chipset_BCM6710]] - Quantity: 1 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Broadcom_chipsets_BCM6715]] - Quantity: 2 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Front-end_modules_-_Skyworks_SKY85755]] - Quantity: 4 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Front-end_modules_-_Qorvo_QPF4632]] - Quantity: 4 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Wi-Fi_antennas_-_2.4_GHz]] - Quantity: 1 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Wi-Fi_antennas_-_5GHz]] - Quantity: 4 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Wi-Fi_antennas_-_6_GHz]] - Quantity: 4 unit - Database: Deux Ex Silicium 
+  * [[product:pd_Quartz_crystals]] - Quantity: 3 unit - Database: Deux Ex Silicium 
+
+Process:
+
+
+Chimaera (to be classified):
+
+
+
+__Biosphere Flow__
+
+
+
+__Information__
+  * From Youtube videoby Deux Ex Silicium: Dans les entrailles de la LIVEBOX 6 : analyses, mesures et décorticage de son électronique, link: https://www.youtube.com/watch?v=VryPNmlxxas
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * Source file: Livebox_6.xlsx
