@@ -2,6 +2,7 @@ End products or processes:
   *[[pd_dell_3620_computer]]
   *[[pd_drinking_1_liter_from_a_water_bottle]]
   *[[pd_livebox_6]]
+  *[[pd_fairphone4]]
   *[[pd_raspberry_pi4_revb]]
 
 Downstream:
@@ -14,6 +15,7 @@ Downstream:
   *[[pd_livebox_6_radioboard]]
   *[[pd_livebox_6_thermal_dissipation_components]]
   *[[pd_livebox_6_user_interface]]
+  *[[pd_fairphone4_motherboard]]
   *[[pd_pd_dell_3620_components]]
   *[[pd_ram]]
   *[[pd_raspberry_pi4_revb_chassis]]

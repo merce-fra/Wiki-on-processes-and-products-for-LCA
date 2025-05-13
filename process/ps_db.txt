@@ -2,12 +2,15 @@ End products or processes:
   *[[ps_dell_3620_computer_loubet]]
   *[[ps_livebox_6_production]]
   *[[ps_raspberry_pi4_revb]]
+  *[[ps_fairphone4_production]]
 
 Downstream:
   *[[ps_assembly_of_computer]]
   *[[ps_dell_3620_chassis]]
   *[[ps_dell_3620_components]]
+  *[[ps_dell_3620_motherboard_loubet]]
   *[[ps_drinking_water_from_a_bottle]]
+  *[[ps_fairphone4_motherboard_production]]
   *[[ps_gpu_loubet]]
   *[[ps_livebox_6_connectivity_components_list]]
   *[[ps_livebox_6_electronics_and_circuits_components_list]]
@@ -15,7 +18,6 @@ Downstream:
   *[[ps_livebox_6_radioboard_production]]
   *[[ps_livebox_6_thermal_dissipation_components_list]]
   *[[ps_livebox_6_user_interface_production]]
-  *[[ps_motherboard]]
   *[[ps_packaging_of_computer]]
   *[[ps_production_of_tap_water]]
   *[[ps_ram]]
@@ -39,6 +41,4 @@ Upstream:
 
 To be classified:
   *[[ps_db]]
-  *[[ps_dell_3620_motherboard_loubet]]
-  *[[ps_motherboard_loubet]]
 

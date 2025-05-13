@@ -12,9 +12,9 @@ import os
 
 # %%
 # Define paths for database files
-base_path = "./"  # EDIT THIS PATH IF NEEDED
+base_path = "./Wiki-on-processes-and-products-for-LCA/"  # EDIT THIS PATH IF NEEDED
 
-source_file_path = "Database_edition/source_import/Example_bw/Livebox_6.xlsx"  
+source_file_path = "Database_edition/source_import/Example_bw/Fairphone_4.xlsx"  
 #lci_rawdata_import_corrected.xlsx"
 path = base_path + source_file_path
 
