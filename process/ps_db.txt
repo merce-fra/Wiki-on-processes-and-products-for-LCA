@@ -39,4 +39,5 @@ Upstream:
 
 To be classified:
   *[[ps_db]]
+  *[[ps_motherboard_loubet]]
 

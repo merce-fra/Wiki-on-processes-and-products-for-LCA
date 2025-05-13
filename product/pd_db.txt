@@ -35,6 +35,7 @@ To be classified:
   *[[pd_inductors]]
   *[[pd_integrated_circuits]]
   *[[pd_memory_ics]]
+  *[[pd_motherboard]]
   *[[pd_pcb]]
   *[[pd_pcie_ram_slots]]
   *[[pd_plug_inlet_and_outlet_for_computer_cable]]
