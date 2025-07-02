@@ -1,0 +1,7 @@
+**Product: pd_electricity**
+
+__List of processes__
+* [[process:ps_slitting_of_cathode_foil_zhang]]
+* [[process:ps_slitting_of_separator_paper_zhang]]
+
+__May be similar to the following products__

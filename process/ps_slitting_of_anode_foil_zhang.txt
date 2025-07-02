@@ -29,3 +29,7 @@ __Information__
   * Number of cutting rolls from a single anode Al coil [pcs]: 23
   * Power of production equipment [kW]: 1.7
   * Cutting speed of the equipment [m/s]: 1
+
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From paper: A cradle-to-grave life cycle assessment of high-voltage aluminum electrolytic capacitors in China, 2022
+  Authors: Cheng Zhang, Junfeng Jing c, Liu Yun b, Yu Zheng b, Haihong Huang.

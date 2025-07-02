@@ -2,6 +2,5 @@
 
 __List of processes__
 * [[process:ps_slitting_of_anode_foil_zhang]]
-* [[process:ps_winding_zhang]]
 
 __May be similar to the following products__

@@ -162,9 +162,13 @@
       Al coil of 0.12mm anode formed foil [kg]	455,239	2995,479 	Slitting of anode foil
       Electricity [kWh]	0,755	4,968 	Slitting of anode foil
 
-    In this example, two products are produced by the process. Hence, in the first step, two product pages should be created (one for each product) and in both product pages the process (here splitting of anode foil Zhang) should be referenced.
+    In this example, two products are produced by the process. Hence, in the first step, two product pages should be created (one for each produced product). In both product pages the process (here splitting of anode foil Zhang) should be referenced. The exact name provided should be used to create the product page.
 
-    Then, in the second step, the process page should be created, with the consumed product and the produced product. The information in the provided "parameter section" should be added in the __Information__ section of the process page. Note that in this example the name of the product produced and the name of the process are different (unlike in the first example).
+    Then, in the second step, the process page should be created, with the consumed product and the produced product. Be careful, you should not mixed "produced product" and "consumed product". Note that in the production section you can have both product and process. The information in the provided "parameter section" should be added in the __Information__ section of the process page. Note that in this example the name of the product produced and the name of the process are different (unlike in the first example).
+    In the information section of the process page, add (after the potential parameters and with one line return after and before):
+    * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+    * From paper: A cradle-to-grave life cycle assessment of high-voltage aluminum electrolytic capacitors in China, 2022.
+    Authors: Cheng Zhang, Junfeng Jing c, Liu Yun b, Yu Zheng b, Haihong Huang.
 
     As for the first step, put information in the created pages of the third step only if information is provided as input (to not create any information).
 

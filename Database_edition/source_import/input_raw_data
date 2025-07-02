@@ -1,17 +1,31 @@
-Process name: Slitting of anode foil Zhang
+Process name: Winding Zhang
 Parameter	
-    Overall size of anode Al coil - Width [mm]  	1000		
-    Overall size of anode Al coil - Inner diameter [mm]  	75		
-    Overall size of anode Al coil - Outer diameter [mm]  	500		
-    Thickness of anode Al  foil [mm]	0,12		
-    Area density of anode Al formed foil [g/cm2]	0,028477		
-    Width of anode Al foil [mm]	42		
-    Number of cutting rolls from a single anode Al coil [pcs]	23		
-    Power of production equipment [kW]	1,7		
-    Cutting speed of the equipment [m/s]	1		
+   Number of cutting rolls from a single anode coil [pcs]	23
+   Number of cutting rolls from a single cathode coil [pcs]	23
+   Number of cutting rolls from a single separator paper coil [pcs]	20
+   Length of anode foil in a single capacitor [mm]	2276
+   Length of cathode foil in a single capacitor [mm]	2326
+   Length of separator paper in a single capacitor [mm]	4902
+   Length of a single anode coil [m]	1598
+   Length of a single cathode coil [m]	3837
+   Length of a single separator paper coil [m]	3875
+   Number of capacitors manufactured from a single anode coil [pcs]	16146
+   Number of capacitors manufactured from a single cathode coil [pcs]	37927
+   Number of capacitors manufactured from a single paper coil [pcs]	15800
+   Power of production equipment [kW]	12
+   Production efficiency [pcs/min]	45
 Produced product	
-    Anode formed foil [kg]	439,761	2893,634 	Slitting of anode foil
-    Scraps of anode formed foil [kg]	15,478	101,845 	Slitting of anode foil
+    Elements(before soak) [pcs]	1000
+    Scraps of anode formed foil [kg]	0,004
+    Scraps of cathode etched foil [kg]	0,004
+    Scraps of separator paper [kg]	0,004
 Consumed product	
-    Al coil of 0.12mm anode formed foil [kg]	455,239	2995,479 	Slitting of anode foil
-    Electricity [kWh]	0,755	4,968 	Slitting of anode foil
+    Anode formed foil [kg]	27,226
+    Cathode etched foil [kg]	9,524
+    Separator paper coil [kg]	7,016
+    Tape [kg]	0,103
+    Tab [kg]	0,07
+    Electricity [kWh]	4,444
+
+
+

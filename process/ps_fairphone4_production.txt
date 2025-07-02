@@ -1,0 +1,49 @@
+**Process: ps_fairphone4_production**
+
+__Characteristics__
+
+  * Database: Fairphone4
+  * Location: GLO
+
+__Technosphere Flow__
+
+**Production**
+
+  * [[product:pd_fairphone4]] - Quantity: None unit
+
+**Consumption**
+
+Product:
+
+  * [[product:pd_Fairphone4_Motherboard]] - Quantity: 89 m2 - Database: Fairphone4 
+  * [[product:pd_Fairphone4_flexcables]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Metallic_shields_of_the_circuitry]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_protective_plastic_housing]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4__SIM_and_Micro_SD_card_connectors]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Board_to_board_(BtB)_connectors_for_modules]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_battery]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Rear_cameras_module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Bottom_module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Earpiece_module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Display_Module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_USB-C_port_module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Back_cover]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone4_Selfie_camera_module]] - Quantity: 1 unit - Database: Fairphone4 
+  * [[product:pd_Fairphone_4_Middle_frame]] - Quantity: 1 unit - Database: Fairphone4 
+
+Process:
+
+
+Chimaera (to be classified):
+
+
+
+__Biosphere Flow__
+
+
+
+__Information__
+  * Source file: Fairphone_4.xlsx
+  * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+  * From document: "LIFE CYCLE ASSESSMENT OF THE FAIRPHONE 4", by David Sánchez, Marina Proske, Sarah-Jane Bau https://www.fairphone.com/wp-content/uploads/2022/07/Fairphone-4-Life-Cycle-Assessment-22.pdf
+
