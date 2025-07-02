@@ -1,8 +1,8 @@
 End products or processes:
   *[[ps_dell_3620_computer_loubet]]
+  *[[ps_fairphone4_production]]
   *[[ps_livebox_6_production]]
   *[[ps_raspberry_pi4_revb]]
-  *[[ps_fairphone4_production]]
 
 Downstream:
   *[[ps_assembly_of_computer]]
@@ -41,4 +41,5 @@ Upstream:
 
 To be classified:
   *[[ps_db]]
+  *[[ps_slitting_of_anode_foil_zhang]]
 

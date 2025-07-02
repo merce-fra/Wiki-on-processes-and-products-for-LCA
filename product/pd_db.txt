@@ -1,13 +1,14 @@
 End products or processes:
   *[[pd_dell_3620_computer]]
   *[[pd_drinking_1_liter_from_a_water_bottle]]
-  *[[pd_livebox_6]]
   *[[pd_fairphone4]]
+  *[[pd_livebox_6]]
   *[[pd_raspberry_pi4_revb]]
 
 Downstream:
   *[[pd_dell_3620_chassis]]
   *[[pd_dell_3620_components]]
+  *[[pd_fairphone4_motherboard]]
   *[[pd_gpu]]
   *[[pd_livebox_6_connectivity_components]]
   *[[pd_livebox_6_electronics_and_circuits_components]]
@@ -15,7 +16,6 @@ Downstream:
   *[[pd_livebox_6_radioboard]]
   *[[pd_livebox_6_thermal_dissipation_components]]
   *[[pd_livebox_6_user_interface]]
-  *[[pd_fairphone4_motherboard]]
   *[[pd_pd_dell_3620_components]]
   *[[pd_ram]]
   *[[pd_raspberry_pi4_revb_chassis]]
@@ -30,6 +30,8 @@ Midstream:
 Upstream:
 
 To be classified:
+  *[[pd_al_coil_of_0.12mm_anode_formed_foil]]
+  *[[pd_anode_formed_foil]]
   *[[pd_connectors]]
   *[[pd_db]]
   *[[pd_dell_3620_motherboard]]
@@ -48,6 +50,7 @@ To be classified:
   *[[pd_processor]]
   *[[pd_remaining_connectors]]
   *[[pd_resistor]]
+  *[[pd_scraps_of_anode_formed_foil]]
   *[[pd_smd]]
   *[[pd_tap_water]]
   *[[pd_wafer]]

@@ -1,0 +1,11 @@
+GPU Loubet
+Components	Elements	Quantity	Unit	ecoinvent process
+4*electrolytic capacitors	5,2	g	market for capacitor, electrolyte type, < 2cm height | GLO
+258*SMD, mainly capacitors	22,2	g	market for capacitor, for surface-mounting | GLO
+2*inductors	3,8	g	market for inductor, low value multilayer chip | GLO
+24*ICs	10,0	g	market for integrated circuit, logic type | GLO
+4*memory ICs	8,0	g	market for integrated circuit, memory type | GLO
+1*die of approx. 9mm*9mm area	81,0	mm2	market for wafer, fabricated, for integrated circuit | GLO
+1*PCB of 152*68mm area	10336,0	mm2	"market for printed wiring board, for surface mounting, Pb free surface | GLO
+market for mounting, surface mount technology, Pb-free solder | GLO"
+3*connectors	20,0	g	market for electric connector, peripheral type buss | GLO

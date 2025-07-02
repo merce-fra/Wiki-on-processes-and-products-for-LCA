@@ -1,0 +1,90 @@
+1-First step: Create product files for each produced product.
+
+name: pd_anode_formed_foil.txt
+**Product: pd_anode_formed_foil**
+
+__List of processes__
+  * [[process:ps_slitting_of_anode_foil_zhang]]
+
+__May be similar to the following products__
+
+END FILE
+
+name: pd_scraps_of_anode_formed_foil.txt
+**Product: pd_scraps_of_anode_formed_foil**
+
+__List of processes__
+  * [[process:ps_slitting_of_anode_foil_zhang]]
+
+__May be similar to the following products__
+
+END FILE
+
+2-Second step: Create the process file.
+
+name: ps_slitting_of_anode_foil_zhang.txt
+**Process: ps_slitting_of_anode_foil_zhang**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_anode_formed_foil]] - Quantity: 439.761 kg - Amount: None - Database: Not specified
+  * [[product:pd_scraps_of_anode_formed_foil]] - Quantity: 15.478 kg - Amount: None - Database: Not specified
+
+**Consumption**
+Product:
+  * [[product:pd_al_coil_of_0.12mm_anode_formed_foil]] - Quantity: 455.239 kg - Amount: None - Database: Not specified
+Process:
+  * [[process:ps_electricity]] - Quantity: 0.755 kWh - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+  * Overall size of anode Al coil - Width [mm]: 1000
+  * Overall size of anode Al coil - Inner diameter [mm]: 75
+  * Overall size of anode Al coil - Outer diameter [mm]: 500
+  * Thickness of anode Al foil [mm]: 0.12
+  * Area density of anode Al formed foil [g/cm2]: 0.028477
+  * Width of anode Al foil [mm]: 42
+  * Number of cutting rolls from a single anode Al coil [pcs]: 23
+  * Power of production equipment [kW]: 1.7
+  * Cutting speed of the equipment [m/s]: 1
+
+END FILE
+
+3-Third step: Create product/process files for consumed elements.
+
+name: pd_al_coil_of_0.12mm_anode_formed_foil.txt
+**Product: pd_al_coil_of_0.12mm_anode_formed_foil**
+
+__List of processes__
+  * Ecoinvent: Slitting of anode foil
+
+__May be similar to the following products__
+
+END FILE
+
+name: ps_electricity.txt
+**Process: ps_electricity**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+
+END FILE
