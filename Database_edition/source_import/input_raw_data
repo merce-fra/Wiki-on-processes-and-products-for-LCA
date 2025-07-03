@@ -1,31 +1,60 @@
-Process name: Winding Zhang
+Process name: Production of Al blank foil  (cathode) Zhang
 Parameter	
-   Number of cutting rolls from a single anode coil [pcs]	23
-   Number of cutting rolls from a single cathode coil [pcs]	23
-   Number of cutting rolls from a single separator paper coil [pcs]	20
-   Length of anode foil in a single capacitor [mm]	2276
-   Length of cathode foil in a single capacitor [mm]	2326
-   Length of separator paper in a single capacitor [mm]	4902
-   Length of a single anode coil [m]	1598
-   Length of a single cathode coil [m]	3837
-   Length of a single separator paper coil [m]	3875
-   Number of capacitors manufactured from a single anode coil [pcs]	16146
-   Number of capacitors manufactured from a single cathode coil [pcs]	37927
-   Number of capacitors manufactured from a single paper coil [pcs]	15800
-   Power of production equipment [kW]	12
-   Production efficiency [pcs/min]	45
+    Material utilization rate	0,98
+    Energy consumption of tower melting furnace [kWh/t]	600
+    Average power of casting rolling machine [kW]	120
+    Rolling speed of casting rolling machine [m/s]	0,05
+    Average power of cold rolling machine [kW]	4480
+    Rolling speed of cold rolling machine 1 [m/s]	5
+    Rolling speed of cold rolling machine 2 [m/s]	16,5
+    Rolling speed of cold rolling machine 3 [m/s]	13
+    Average power of uncoiler[kWh]	1236
+    Average power of decoiler[kWh]	1854
+    Water consumption of casting rolling [m3/t]	1,3
+    Thickness of Al sheet in casting rolling [mm]	8
+    Thickness of Al sheet in cold rolling 1  [mm]	3
+    Thickness of Al sheet in cold rolling 2  [mm]	0,1
+    Thickness of Al foil in foil rolling  [mm]	0,05
+    Length of  finial Al coil  [m]	7403
 Produced product	
-    Elements(before soak) [pcs]	1000
-    Scraps of anode formed foil [kg]	0,004
-    Scraps of cathode etched foil [kg]	0,004
-    Scraps of separator paper [kg]	0,004
+    0.05mm Al blank coil [kg]	1000	Production of Al blank foil  (cathode)
+    Al scraps [kg]	20,03 	Al smelting preparation  (cathode)
+    Dust[kg]	0,378	Al smelting preparation  (cathode)
+    Wastewater [kg]	2620,924	Production of Al blank foil  (cathode)
+    COD [kg]	0,183	Production of Al blank foil  (cathode)
+    SS [kg]	0,183	Production of Al blank foil  (cathode)
+    BOD [kg]	1,153	Production of Al blank foil  (cathode)
+    NH3-N [kg]	0,052	Production of Al blank foil  (cathode)
 Consumed product	
-    Anode formed foil [kg]	27,226
-    Cathode etched foil [kg]	9,524
-    Separator paper coil [kg]	7,016
-    Tape [kg]	0,103
-    Tab [kg]	0,07
-    Electricity [kWh]	4,444
+    Al ingots (99.9%) [kg]	1020,41 	Al smelting preparation  (cathode)
+    Electricity [kWh]	612,245	Al smelting preparation  (cathode)
+    Ar gas [kg]	0,184	Al smelting preparation  (cathode)
+    Electricity [kWh]	30,846	Casting rolling (cathode)
+    Graphitic lubricant [kg]	0,032	Casting rolling (cathode)
+    Deionized water [kg]	2,56	Casting rolling (cathode)
+    Tap water [kg]	1326,531	Casting rolling (cathode)
+    Electricity [kWh]	51,89	Cold rolling 1 (cathode)
+    Deionized water [kg]	12,092	Cold rolling 1 (cathode)
+    Rolling oil  [kg}	0,387	Cold rolling 1 (cathode)
+    Electricity [kWh]	140,2	Intermediate annealing 1 (cathode)
+    Electricity [kWh]	471,723	Cold rolling 2 (cathode)
+    Deionized water [kg]	362,747	Cold rolling 2 (cathode)
+    Rolling oil  [kg}	11,608	Cold rolling 2 (cathode)
+    Electricity [kWh]	50,1	Intermediate annealing 2 (cathode)
+    Deionized water [kg]	725,494	Foil rolling  (cathode)
+    Rolling oil  [kg}	23,216	Foil rolling  (cathode)
+    Electricity [kWh]	1197,451	Foil rolling  (cathode)
+    NaOH solution (30%) [kg]	31,8	Final annealing (cathode)
+    Electricity [kWh]	129,9	Final annealing (cathode)
+    N2 gas[kg]	1,29	Final annealing (cathode)
+
+
+
+    
+
+
+    
+ 
 
 
 

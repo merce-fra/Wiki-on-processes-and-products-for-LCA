@@ -1,0 +1,35 @@
+**Process: ps_soak_zhang**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_elements_before_assembly]] - Quantity: 3755 pcs
+
+**Consumption**
+Product:
+  * [[product:pd_elements_before_soak]] - Quantity: 3755 pcs
+  * [[product:pd_electrolyte]] - Quantity: 78.986 kg
+  * [[product:pd_electricity]] - Quantity: 5.625 kWh
+
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+  * Average heating power [kW]: 15
+  * Heating time of a single batch [h]: 0,3
+  * Vacuum machine power [kW]: 1,5
+  * Soak time of a single batch [h]: 0,75
+  * Max number of soak sieves in the soak tank [pcs]: 3
+  * Max bearing weight of a soak sieve [kg]: 80
+  * Number of elements in the soak tank by a single batch [pcs]: 3755
+  * Electrolyte loss rate: 0,95
+
+* Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+* From paper: A cradle-to-grave life cycle assessment of high-voltage aluminum electrolytic capacitors in China, 2022.
+Authors: Cheng Zhang, Junfeng Jing c, Liu Yun b, Yu Zheng b, Haihong Huang.

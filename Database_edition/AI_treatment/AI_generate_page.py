@@ -8,7 +8,6 @@
 # Author: [Vincent Corlay - Mitsubishi Electric R&D Centre Europe]
 # -----------------------------------------------------------------------------
 
-
 import os
 import yaml
 import requests
@@ -34,13 +33,14 @@ def call_together_ai(prompt, model_used=API_MODEL):
     payload = {
         "model": model_used,
         "messages": prompt,
-        "temperature": 0.3
+        "temperature": 0.3,
+        "max_tokens": 100000
     }
 
     try:
         response = requests.post(url, headers=headers, data=json.dumps(payload))
         response.raise_for_status()
-        return response.json()['choices'][0]['message']['content']
+        return response.json()   # <== return full response #response.json()['choices'][0]['message']['content']
     except Exception as e:
         print(f"Error calling API: {str(e)}")
         return None
@@ -247,19 +247,28 @@ def main():
 
     # Call API
     print("Sending request to Together API...")
-    response = call_together_ai(messages)
+    response_data = call_together_ai(messages)
+    if response_data is None:
+        return
+
+    # Extract generated text
+    response_text = response_data["choices"][0]["message"]["content"]
+
+    # Save raw response
+    output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "generate_pages_analysis.txt")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(response_text)
+    print(f"Raw analysis saved to {output_path}")
     
-    if response:
-        # Save raw response
-        output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "generate_pages_analysis.txt")
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(response)
-        print(f"Raw analysis saved to {output_path}")
-        
-        # Parse response and create/update files
-        parse_and_create_files(response, base_path)
-        print("Files generated/updated successfully")
+    # Parse response and create/update files
+    parse_and_create_files(response_text, base_path)
+    print("Files generated/updated successfully")
+
+    # Print usage info
+    usage = response_data.get("usage", {})
+    print("Token usage:")
+    print(json.dumps(usage, indent=2))
 
 if __name__ == "__main__":
     main()

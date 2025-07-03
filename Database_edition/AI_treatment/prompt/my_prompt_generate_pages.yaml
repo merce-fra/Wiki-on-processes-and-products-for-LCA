@@ -22,7 +22,6 @@
 
     If there is an information provided in the source, it should be added in the section __Information__ of the process.
 
-
     1-First step:  You generate one product file "pd_gpu.txt" (the name of the file which is above the columns label row  - here "Elements ...") which contains the following information:
     name: pd_gpu.txt
     **Product: pd_gpu**
@@ -135,10 +134,10 @@
     is a process and therfore you should not create a product file as done in step 1. In this case the process has no related product in section "production" of "technosphere flow".
 
     Again, in the second step, you may detect that an element is more suited to the category "process" than "product". In this case, you should then create a process file instead of a product file in step 3 for this element. For instance, if you detect that the element "Production of tap water" is more suited to the category "process" than "product" in step 2, you should create a process file instead of a product file in step 3.
-
+    
     Finally, don't create new processes (ps files) for ecoinvent processes. For instance, if you detect that the element "market for capacitor, electrolyte type, < 2cm height | GLO" is an ecoinvent process, you should not create a new process file for it. You should just create a product file for it in step 3.
 
-    When providing with a column "element" and an a column "ecoinvent" for step 2, the name in the element column should be used as name of process. Then, only in step 3 the evoinvent process is listed with its raw name as part of a process or a product in the process or product section of the page created in step 3 (it should not be put as "Information" but in the technosphere flow). Hence, there should no be new files with the name of an ecoinvent process.
+    When providing with a column "element" and an a column "ecoinvent" for step 2, the name in the element column should be used as name of process. Then, only in step 3 the evoinvent process is listed with its raw name as part of a process or a product in the process or product section of the page created in step 3 (it should not be put as "Information" but in the technosphere flow). Hence, there should no be new files with the name of an ecoinvent process. In general with this example, there is no need to create product pages for consumed products. 
 
     Recall that if the provided main element is a product, at step 1 you should create a product file where only one process for this element is provided (having a similar name).
 
@@ -164,7 +163,13 @@
 
     In this example, two products are produced by the process. Hence, in the first step, two product pages should be created (one for each produced product). In both product pages the process (here splitting of anode foil Zhang) should be referenced. The exact name provided should be used to create the product page.
 
-    Then, in the second step, the process page should be created, with the consumed product and the produced product. Be careful, you should not mixed "produced product" and "consumed product". Note that in the production section you can have both product and process. The information in the provided "parameter section" should be added in the __Information__ section of the process page. Note that in this example the name of the product produced and the name of the process are different (unlike in the first example).
+    Then, in the second step, the process page should be created, with the consumed product and the produced product. Be careful, you should not mixed "produced product" and "consumed product". Note that in the production section you can have both product and process. The information in the provided "parameter section" should be added in the __Information__ section of the process page. Add the parameters with bullet points. Note that in this example the name of the product produced and the name of the process are different (unlike in the first example).
+    If addtional information is provided for a consumed product or produced product, e.g., 
+    Consumed product	
+      0.12mm Al blank coil [kg]	518	Preparation of sulfuric acid (anode)
+    The information "Preparation of sulfuric acid (anode)" should just be added after the "Database: Not specified" field of a raw in the process page (using a new field "Additional information:"). E.g., it becomes "... - Database: Not specified - Additional information: Preparation of sulfuric acid (anode)"
+
+
     In the information section of the process page, add (after the potential parameters and with one line return after and before):
     * Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
     * From paper: A cradle-to-grave life cycle assessment of high-voltage aluminum electrolytic capacitors in China, 2022.
@@ -173,8 +178,6 @@
     As for the first step, put information in the created pages of the third step only if information is provided as input (to not create any information).
 
     Again, the format of the created page should be the same as described above. Only the input format changes in this example.
-
-      
 
 
 - role: user

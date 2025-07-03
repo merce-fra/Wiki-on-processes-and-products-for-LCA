@@ -42,4 +42,7 @@ Upstream:
 To be classified:
   *[[ps_db]]
   *[[ps_slitting_of_anode_foil_zhang]]
+  *[[ps_slitting_of_cathode_foil_zhang]]
+  *[[ps_slitting_of_separator_paper_zhang]]
+  *[[ps_winding_zhang]]
 

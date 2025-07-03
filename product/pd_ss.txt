@@ -1,4 +1,4 @@
-**Product: pd_wastewater**
+**Product: pd_ss**
 
 __List of processes__
 * [[process:ps_production_of_cathode_etched_foil_zhang]]

@@ -1,0 +1,69 @@
+**Process: ps_production_of_al_blank_foil_anode_zhang**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_0.12mm_al_blank_coil]] - Quantity: 1000 kg - Database: Not specified
+  * [[product:pd_al_scraps]] - Quantity: 52.24 kg - Database: Not specified - Additional information: Al smelting preparation (anode)
+  * [[product:pd_dust]] - Quantity: 0.389 kg - Database: Not specified - Additional information: Al smelting preparation (anode)
+  * [[product:pd_wastewater]] - Quantity: 1197.5405 kg - Database: Not specified
+  * [[product:pd_cod]] - Quantity: 0.084 kg - Database: Not specified
+  * [[product:pd_ss]] - Quantity: 0.084 kg - Database: Not specified
+  * [[product:pd_bod]] - Quantity: 0.527 kg - Database: Not specified
+  * [[product:pd_nh3-n]] - Quantity: 0.024 kg - Database: Not specified
+
+**Consumption**
+
+Product:
+  * [[product:pd_al_ingots]] - Quantity: 1052.63 kg - Database: Not specified - Additional information: Al smelting preparation (anode)
+  * [[product:pd_electricity]] - Quantity: 631.579 kWh - Database: Not specified - Additional information: Al smelting preparation (anode)
+  * [[product:pd_ar_gas]] - Quantity: 0.189 kg - Database: Not specified - Additional information: Al smelting preparation (anode)
+  * [[product:pd_electricity]] - Quantity: 30.85 kWh - Database: Not specified - Additional information: Casting rolling (anode)
+  * [[product:pd_graphitic_lubricant]] - Quantity: 0.032 kg - Database: Not specified - Additional information: Casting rolling (anode)
+  * [[product:pd_deionized_water]] - Quantity: 2.56 kg - Database: Not specified - Additional information: Casting rolling (anode)
+  * [[product:pd_tap_water]] - Quantity: 1368.421 kg - Database: Not specified - Additional information: Casting rolling (anode)
+  * [[product:pd_electricity]] - Quantity: 51.897 kWh - Database: Not specified - Additional information: Cold rolling 1 (anode)
+  * [[product:pd_deionized_water]] - Quantity: 12.093 kg - Database: Not specified - Additional information: Cold rolling 1 (anode)
+  * [[product:pd_rolling_oil]] - Quantity: 0.387 kg - Database: Not specified - Additional information: Cold rolling 1 (anode)
+  * [[product:pd_electricity]] - Quantity: 140.2 kWh - Database: Not specified - Additional information: Intermediate annealing 1 (anode)
+  * [[product:pd_electricity]] - Quantity: 294.867 kWh - Database: Not specified - Additional information: Cold rolling 2 (anode)
+  * [[product:pd_deionized_water]] - Quantity: 226.7475 kg - Database: Not specified - Additional information: Cold rolling 2 (anode)
+  * [[product:pd_rolling_oil]] - Quantity: 7.256 kg - Database: Not specified - Additional information: Cold rolling 2 (anode)
+  * [[product:pd_electricity]] - Quantity: 50.1 kWh - Database: Not specified - Additional information: Intermediate annealing 2 (anode)
+  * [[product:pd_deionized_water]] - Quantity: 302.33 kg - Database: Not specified - Additional information: Foil rolling (anode)
+  * [[product:pd_rolling_oil]] - Quantity: 9.675 kg - Database: Not specified - Additional information: Foil rolling (anode)
+  * [[product:pd_electricity]] - Quantity: 499.005 kWh - Database: Not specified - Additional information: Foil rolling (anode)
+  * [[product:pd_naoh_solution]] - Quantity: 31.8 kg - Database: Not specified - Additional information: Final annealing (anode)
+  * [[product:pd_electricity]] - Quantity: 129.9 kWh - Database: Not specified - Additional information: Final annealing (anode)
+  * [[product:pd_n2_gas]] - Quantity: 1.29 kg - Database: Not specified - Additional information: Final annealing (anode)
+
+Process:
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+  * Material utilization rate: 0.95
+  * Energy consumption of tower melting furnace [kWh/t]: 600
+  * Average power of casting rolling machine [kW]: 120
+  * Rolling speed of casting rolling machine [m/s]: 0.05
+  * Average power of cold rolling machine [kW]: 4480
+  * Rolling speed of cold rolling machine 1 [m/s]: 5
+  * Rolling speed of cold rolling machine 2 [m/s]: 16.5
+  * Rolling speed of cold rolling machine 3 [m/s]: 13
+  * Average power of uncoiler[kWh]: 1236
+  * Average power of decoiler[kWh]: 1854
+  * Water consumption of casting rolling [m3/t]: 1.3
+  * Thickness of Al sheet in casting rolling [mm]: 8
+  * Thickness of Al sheet in cold rolling 1 [mm]: 3
+  * Thickness of Al sheet in cold rolling 2 [mm]: 0.16
+  * Thickness of Al foil in foil rolling [mm]: 0.12
+  * Length of final Al coil [m]: 3085
+
+* Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+* From paper: A cradle-to-grave life cycle assessment of high-voltage aluminum electrolytic capacitors in China, 2022.
+Authors: Cheng Zhang, Junfeng Jing c, Liu Yun b, Yu Zheng b, Haihong Huang.
