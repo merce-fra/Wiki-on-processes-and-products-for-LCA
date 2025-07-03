@@ -43,6 +43,8 @@ To be classified:
   *[[ps_aging_and_inspection_zhang]]
   *[[ps_assembly_including_sleeving_zhang]]
   *[[ps_db]]
+  *[[ps_electrolytic_capacitors_aging_and_inspection_zhang]]
+  *[[ps_electrolytic_capacitors_assembly_including_sleeving_zhang]]
   *[[ps_production_of_al_blank_foil_anode_zhang]]
   *[[ps_production_of_al_blank_foil_cathode_zhang]]
   *[[ps_production_of_anode_formed_foil_zhang]]
