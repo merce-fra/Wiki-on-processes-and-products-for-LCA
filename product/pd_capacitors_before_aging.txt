@@ -1,6 +1,6 @@
 **Product: pd_capacitors_before_aging**
 
 __List of processes__
-  * [[process:ps_assembly_including_sleeving_zhang]]
+  * [[process:ps_electrolytic_capacitors_assembly_including_sleeving_zhang]]
 
 __May be similar to the following products__

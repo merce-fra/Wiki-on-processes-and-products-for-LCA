@@ -2,6 +2,6 @@
 
 __List of processes__
 * Ecoinvent: market for capacitor_electrolyte_type_<2cm_height | GLO
-* [[process:ps_aging_and_inspection_zhang]]
+* [[process:ps_electrolytic_capacitors_aging_and_inspection_zhang]]
 
 __May be similar to the following products__

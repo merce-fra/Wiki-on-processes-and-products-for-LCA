@@ -40,9 +40,16 @@ Upstream:
   *[[ps_electricity_low_voltage]]
 
 To be classified:
+  *[[ps_aging_and_inspection_zhang]]
+  *[[ps_assembly_including_sleeving_zhang]]
   *[[ps_db]]
+  *[[ps_production_of_al_blank_foil_anode_zhang]]
+  *[[ps_production_of_al_blank_foil_cathode_zhang]]
+  *[[ps_production_of_anode_formed_foil_zhang]]
+  *[[ps_production_of_cathode_etched_foil_zhang]]
   *[[ps_slitting_of_anode_foil_zhang]]
   *[[ps_slitting_of_cathode_foil_zhang]]
   *[[ps_slitting_of_separator_paper_zhang]]
+  *[[ps_soak_zhang]]
   *[[ps_winding_zhang]]
 

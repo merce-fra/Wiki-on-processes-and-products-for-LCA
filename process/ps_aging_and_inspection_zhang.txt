@@ -1,4 +1,4 @@
-**Process: ps_aging_and_inspection_zhang**
+**Process: ps_electrolytic_capacitors_aging_and_inspection_zhang**
 
 __Characteristics__
 
