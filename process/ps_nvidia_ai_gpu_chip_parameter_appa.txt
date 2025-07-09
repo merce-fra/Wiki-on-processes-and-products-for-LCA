@@ -18,5 +18,5 @@ Chimaera (to be classified - put in process by default):
 __Biosphere Flow__
 
 __Information__
-* Added by: Maxime Peralta
-* From reference: https://appalca.github.io/in_depth/appa_build_in_depth.html
+  * Added by: Vincent Corlay
+  * From reference: https://appalca.github.io/in_depth/appa_build_in_depth.html
