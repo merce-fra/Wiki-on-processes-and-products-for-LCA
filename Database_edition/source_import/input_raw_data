@@ -1,55 +1,17 @@
-Process name: Production of Al blank foil  (cathode) Zhang
-Parameter	
-    Material utilization rate	0,98
-    Energy consumption of tower melting furnace [kWh/t]	600
-    Average power of casting rolling machine [kW]	120
-    Rolling speed of casting rolling machine [m/s]	0,05
-    Average power of cold rolling machine [kW]	4480
-    Rolling speed of cold rolling machine 1 [m/s]	5
-    Rolling speed of cold rolling machine 2 [m/s]	16,5
-    Rolling speed of cold rolling machine 3 [m/s]	13
-    Average power of uncoiler[kWh]	1236
-    Average power of decoiler[kWh]	1854
-    Water consumption of casting rolling [m3/t]	1,3
-    Thickness of Al sheet in casting rolling [mm]	8
-    Thickness of Al sheet in cold rolling 1  [mm]	3
-    Thickness of Al sheet in cold rolling 2  [mm]	0,1
-    Thickness of Al foil in foil rolling  [mm]	0,05
-    Length of  finial Al coil  [m]	7403
-Produced product	
-    0.05mm Al blank coil [kg]	1000	Production of Al blank foil  (cathode)
-    Al scraps [kg]	20,03 	Al smelting preparation  (cathode)
-    Dust[kg]	0,378	Al smelting preparation  (cathode)
-    Wastewater [kg]	2620,924	Production of Al blank foil  (cathode)
-    COD [kg]	0,183	Production of Al blank foil  (cathode)
-    SS [kg]	0,183	Production of Al blank foil  (cathode)
-    BOD [kg]	1,153	Production of Al blank foil  (cathode)
-    NH3-N [kg]	0,052	Production of Al blank foil  (cathode)
-Consumed product	
-    Al ingots (99.9%) [kg]	1020,41 	Al smelting preparation  (cathode)
-    Electricity [kWh]	612,245	Al smelting preparation  (cathode)
-    Ar gas [kg]	0,184	Al smelting preparation  (cathode)
-    Electricity [kWh]	30,846	Casting rolling (cathode)
-    Graphitic lubricant [kg]	0,032	Casting rolling (cathode)
-    Deionized water [kg]	2,56	Casting rolling (cathode)
-    Tap water [kg]	1326,531	Casting rolling (cathode)
-    Electricity [kWh]	51,89	Cold rolling 1 (cathode)
-    Deionized water [kg]	12,092	Cold rolling 1 (cathode)
-    Rolling oil  [kg}	0,387	Cold rolling 1 (cathode)
-    Electricity [kWh]	140,2	Intermediate annealing 1 (cathode)
-    Electricity [kWh]	471,723	Cold rolling 2 (cathode)
-    Deionized water [kg]	362,747	Cold rolling 2 (cathode)
-    Rolling oil  [kg}	11,608	Cold rolling 2 (cathode)
-    Electricity [kWh]	50,1	Intermediate annealing 2 (cathode)
-    Deionized water [kg]	725,494	Foil rolling  (cathode)
-    Rolling oil  [kg}	23,216	Foil rolling  (cathode)
-    Electricity [kWh]	1197,451	Foil rolling  (cathode)
-    NaOH solution (30%) [kg]	31,8	Final annealing (cathode)
-    Electricity [kWh]	129,9	Final annealing (cathode)
-    N2 gas[kg]	1,29	Final annealing (cathode)
+Product name: gpu
+Process name : nvidia_ai_gpu_chip_parameter_Appa
 
+nvidia_ai_gpu_chip_parameter_Appa
+    ai_use_phase
+        electricity_no_ei
+    nvidia_gpu_chip_manufacturing
+        nvidia_gpu_die_manufacturing
+            functional_logic_die_manufacturing
+                logic_die_manufacturing
+        bga_package_manufacturing
+            gold_extraction
 
-
+Reference is : https://appalca.github.io/in_depth/appa_build_in_depth.html by Maxime Peralta
     
 
 

@@ -1,0 +1,18 @@
+**Process: ps_nvidia_gpu_die_manufacturing**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+Process:
+  * [[process:ps_functional_logic_die_manufacturing]] - Quantity: None - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__

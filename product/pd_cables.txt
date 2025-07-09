@@ -1,0 +1,6 @@
+**Product: pd_cables**
+
+__List of processes__
+  * [[process:ps_production_of_cables]]
+
+__May be similar to the following products__

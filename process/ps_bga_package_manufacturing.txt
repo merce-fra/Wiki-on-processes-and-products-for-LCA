@@ -1,0 +1,18 @@
+**Process: ps_bga_package_manufacturing**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+Process:
+  * [[process:ps_gold_extraction]] - Quantity: None - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__

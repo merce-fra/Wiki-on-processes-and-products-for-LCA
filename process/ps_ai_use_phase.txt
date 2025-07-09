@@ -1,0 +1,18 @@
+**Process: ps_ai_use_phase**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+
+**Consumption**
+Process:
+  * [[process:ps_electricity_no_ei]] - Quantity: None - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__

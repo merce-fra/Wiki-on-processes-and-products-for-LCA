@@ -1,0 +1,27 @@
+**Process: ps_production_of_the_power_supply_unit**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_power_supply_unit]] - Quantity: None unit
+
+**Consumption**
+
+Process:
+  * [[process:ps_production_of_the_power_converter]] - Quantity: None - Database: Not specified
+  * [[process:ps_production_of_the_backup_batteries]] - Quantity: None - Database: Not specified
+  * [[process:ps_production_of_the_mechanical_structure]] - Quantity: None - Database: Not specified
+  * [[process:ps_upstream_transport_of_the_sub-components]] - Quantity: None - Database: Not specified
+  * [[process:ps_final_assembly_of_the_component]] - Quantity: None - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+* Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+* From paper: A parametric life-cycle model for assessing environmental impacts of 4G and 5G cellular base stations (2024).
+Authors: Golard, Louis ; Dethienne, Robin ; Louveaux, Jérôme ; Bol, David

@@ -1,0 +1,24 @@
+**Process: ps_antenna_26_ghz_transmit-array**
+
+__Characteristics__
+
+
+__Technosphere Flow__
+
+**Production**
+  * [[product:pd_antenna_26_ghz_transmit-array]] - Quantity: None unit
+
+**Consumption**
+Product:
+  * [[product:pd_power_board]] - Quantity: 1 unit - Database: Not specified
+  * [[product:pd_command_board]] - Quantity: 2 unit - Database: Not specified
+  * [[product:pd_matrix_board]] - Quantity: 1 unit - Database: Not specified
+
+Chimaera (to be classified - put in process by default):
+
+__Biosphere Flow__
+
+__Information__
+* Added by: Vincent Corlay (v.corlay@fr.merce.mee.com)
+* From paper: Toward Eco-Design of a 5GmmWave Transmit array Antenna Based on Life Cycle Assessment
+Authors: Josua Guérid, Jean-Baptiste Doré, Jacques Reverdy, Bruno Reig, Antonio Clemente, Lea Di Cioccio

@@ -179,6 +179,45 @@
 
     Again, the format of the created page should be the same as described above. Only the input format changes in this example.
 
+    If you are provided with sections
+
+    Scope Module Description Unit
+    Then first create a page process page with the modules in the consumption page. And then for each module, create pages with the product/process in the description section. Add the Scope information as information in the lines of the consumations items.
+    Don't forget to create intermediate product pages (i.e. poduct page radio unit and then process page production of radio unit). In the process pages it is better to include products in the consumption part. 
+    Another example: In the first process page e.g. cellular_base_station_4g_5g_golard the product consummed is baseband_unit and then there is the process production_of_the_baseband_unit added in the page of the production baseband_unit. So in the process page e.g. cellular_base_station_4g_5g_golard  only includes the consued product (with product names) in the consumption section. Then create a product page where the process is added.
+
+    Again, if you are provided with subsections (indent) you need to include only the first sections in the first process pages and the subsections are items are included in the page of the process for each section item. For sintance, with
+
+    Power board 1 unit
+        ICs 1.2 g, 8 unit
+        Others (resistors, capacitors etc.) 242.7 g, 64 unit
+        PCB 324 cm2, 1 unit
+    Command board 2 unit
+        ICs 4.9 g, 653 unit
+        Others (resistors, capacitors etc.) 91.2 g - 674 unit
+        PCB - 198 cm2 1 unit
+    Matrix board 1 unit
+        ICs 0.5 g - 2306 unit
+    Others (resistors, capacitors etc.) 15.9 g - 16 unit
+        PCB - 324 cm2 1 unit    
+
+    The first process page include the consumed products  Power board, Command board, Matrix board, Others (resistors, capacitors etc.) only. A product page and a process page is created for each of these products and include the details in the subsection.
+
+    Another example:
+    Product name: gpu
+    Process name : nvidia_ai_gpu_chip_parameter_Appa
+
+    nvidia_ai_gpu_chip_parameter_Appa
+        ai_use_phase
+            electricity_no_ei
+        nvidia_gpu_chip_manufacturing
+            nvidia_gpu_die_manufacturing
+                functional_logic_die_manufacturing
+                    logic_die_manufacturing
+            bga_package_manufacturing
+                gold_extraction
+        
+    In this case the product gpu is produced by the process nvidia_ai_gpu_chip_parameter_Appa. Then, the indent levels give the structure. Then, the process nvidia_ai_gpu_chip_parameter_Appa consumes  ai_use_phase and nvidia_gpu_chip_manufacturing. Then, the process producing the product nvidia_gpu_chip_manufacturing consumes nvidia_gpu_die_manufacturing and bga_package_manufacturing etc. 
 
 - role: user
   content: |
