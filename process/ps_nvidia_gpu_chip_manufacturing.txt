@@ -2,6 +2,11 @@
 
 __Characteristics__
 
+__Parameters__
+  * cuda_core
+  * architecture
+
+__Global Models (used by several process)__
 
 __Technosphere Flow__
 
@@ -9,8 +14,14 @@ __Technosphere Flow__
 
 **Consumption**
 Process:
-  * [[process:ps_nvidia_gpu_die_manufacturing]] - Quantity: None - Database: Not specified
-  * [[process:ps_bga_package_manufacturing]] - Quantity: None - Database: Not specified
+  * [[process:ps_nvidia_gpu_die_manufacturing]] - Parameters: architecture, cuda_core - Quantity: None - Database: Not specified
+  * [[process:ps_bga_package_manufacturing]] 
+    * Local model:
+      * leads = f(cuda_core, architecture)
+    * Parameters: leads 
+    * Quantity: None 
+    * Database: Not specified
+
 
 Chimaera (to be classified - put in process by default):
 

@@ -2,6 +2,15 @@
 
 __Characteristics__
 
+__Parameters__
+  * cuda_core
+  * architecture
+  * energy_per_inference
+  * inference_per_day
+  * lifespan
+  * usage_location
+
+__Global Models (used by several process)__
 
 __Technosphere Flow__
 
@@ -9,9 +18,16 @@ __Technosphere Flow__
   * [[product:pd_gpu]] - Quantity: None unit
 
 **Consumption**
+
 Process:
-  * [[process:ps_ai_use_phase]] - Quantity: None - Database: Not specified
-  * [[process:ps_nvidia_gpu_chip_manufacturing]] - Quantity: None - Database: Not specified
+  * [[process:ps_ai_use_phase]] 
+    * Local model: 
+      * inference = f(inference_per_day,lifespan)
+    * Parameters: energy_per_inference, inference, usage_location 
+    * Quantity: None 
+    * Database: Not specified
+  * [[process:ps_nvidia_gpu_chip_manufacturing]] - parameters: architecture, cuda_core - Quantity: None - Database: Not specified
+  
 
 Chimaera (to be classified - put in process by default):
 

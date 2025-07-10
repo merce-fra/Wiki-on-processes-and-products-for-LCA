@@ -2,6 +2,14 @@
 
 __Characteristics__
 
+__Parameters__
+  * area 
+  * defect_density
+  * fab_location
+  * technology_node
+
+__Global Models (used by several process)__
+
 
 __Technosphere Flow__
 
@@ -9,7 +17,26 @@ __Technosphere Flow__
 
 **Consumption**
 Process:
-  * [[process:ps_functional_logic_die_manufacturing]] - Quantity: None - Database: Not specified
+  * [[process:ps_functional_logic_die_manufacturing]]
+    * Local model: 
+      * IF architecture == Pascal
+        * parameters_matching:
+          * defect_density: 0.05
+          * technology_node: 16 #is actually 14 for 2 chips, and 16 for 4 chips.
+          * fab_location:
+            * TW: 1
+          * area: 0.13184623155305694*cuda_core + 21.707425626610416
+
+        * IF architecture == Maxwell
+          * parameters_matching:
+            * defect_density: 0.02
+            * technology_node: 28
+            * fab_location:
+              * TW: 1
+            * area: 0.1889809692866578*cuda_core + 19.47688243064738
+      * parameters: architecture=architecture, area,  defect_density, fab_location, technology_node 
+      * Quantity: None 
+      * Database: Not specified
 
 Chimaera (to be classified - put in process by default):
 

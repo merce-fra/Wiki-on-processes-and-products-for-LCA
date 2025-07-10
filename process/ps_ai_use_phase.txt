@@ -2,6 +2,10 @@
 
 __Characteristics__
 
+__Parameters__
+  * usage_location
+
+__Models__
 
 __Technosphere Flow__
 
@@ -9,7 +13,7 @@ __Technosphere Flow__
 
 **Consumption**
 Process:
-  * [[process:ps_electricity_no_ei]] - Quantity: None - Database: Not specified
+  * [[process:ps_electricity_no_ei]] - Parameters: usage_location - Quantity: None - Database: Not specified
 
 Chimaera (to be classified - put in process by default):
 

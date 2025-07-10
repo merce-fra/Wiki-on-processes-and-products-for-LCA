@@ -2,6 +2,8 @@
 
 __Characteristics__
 
+__Parameters__
+  * leads
 
 __Technosphere Flow__
 
