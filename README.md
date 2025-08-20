@@ -1,19 +1,19 @@
 # Project Overview
 
+[Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in the markdown format in the Wiki-on-processes-and-products-for-LCA.wiki folder. They can also be directly modifed from the wiki page.]
+
 This project consists of three main parts:
 
 1. **The Wiki**  
    A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **inventory** part of a Life Cycle Assessment (LCA) study.
    You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) or install it on dokuwiki.
    
-   The pages are orginally generated in the dokuwiki (.txt) format and then automatically converted to the GitHub Wiki format (markdown) with the script `convert_to_github_wiki.py`. The source files for the pages are located in the `process/` and `product/` folders of this repository. The pages can be eddited by changing the text content of the .txt files. 
-   
-   Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. Again, it is recommanded to modify the pages in the `process/` and `product/` folders of this repo and then automatically generate the files in the folder `Wiki-on-processes-and-products-for-LCA.wiki` using the script `convert_to_github_wiki.py`.
+   Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki. 
 
 2. **The import function for Brightway-formatted data**  
-   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `process_new/` and `product_new/` . If the pages are satisfactory, they should then be manually moved to the folders `process/` and `product/`. One can have a look at the folder `Database_edition/source_import/Example_bw/` for examples of Brightway-formatted excel files.
+   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `Wiki-on-processes-and-products-for-LCA.wiki/process_new/` and `Wiki-on-processes-and-products-for-LCA.wiki/product_new/` . If the pages are satisfactory, they should then be manually moved to the folders `process/` and `product/`. One can have a look at the folder `Database_edition/source_import/Example_bw/` for examples of Brightway-formatted excel files.
 
-   If new pages are added in the folders `process/` and `product/`, the `ps_db.txt` and `pd_db.txt` files (where all the pages are listed) should be updated by running the script `update_database_list.py`.
+   If new pages are added in the folders `process/` and `product/`, the `ps_db.md` and `pd_db.md` files (where all the pages are listed) should be updated by running the script `update_database_list.py`.
 
 3. **AI-based Wiki Edition**  
    This tool integrates AI to assist in the management of the Wiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
