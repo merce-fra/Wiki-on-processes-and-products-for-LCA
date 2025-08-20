@@ -3,10 +3,8 @@
 __Characteristics__
 
 __Parameters__
-  * area 
-  * defect_density
-  * fab_location
-  * technology_node
+  * cuda_core
+  * architecture
 
 __Global Models (used by several process)__
 
