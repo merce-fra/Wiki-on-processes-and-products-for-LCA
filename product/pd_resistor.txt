@@ -1,6 +1,0 @@
-**Product: pd_resistor**
-
-__List of processes__
-  * Ecoinvent: resistor_production_surface-mounted | APOS_U - GLO
-
-__May be similar to the following products__

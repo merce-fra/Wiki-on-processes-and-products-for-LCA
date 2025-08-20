@@ -1,6 +1,0 @@
-**Product: pd_plug_inlet_and_outlet_for_computer_cable**
-
-__List of processes__
-  * Ecoinvent: market for plug_inlet_and_outlet_for_computer_cable | APOS_U - GLO
-
-__May be similar to the following products__

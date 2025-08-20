@@ -1,7 +1,0 @@
-**Product: pd_pcb**
-
-__List of processes__
-  * Ecoinvent: market for printed_wiring_board_for_surface_mounting_Pb_free_surface | GLO
-  * Ecoinvent: market for mounting_surface_mount_technology_Pb-free_solder | GLO
-
-__May be similar to the following products__

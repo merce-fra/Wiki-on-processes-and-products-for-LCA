@@ -1,6 +1,0 @@
-**Product: pd_link-layer_boards**
-
-__List of processes__
-  * [[process:ps_production_of_the_link-layer_boards]]
-
-__May be similar to the following products__

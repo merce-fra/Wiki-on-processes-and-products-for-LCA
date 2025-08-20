@@ -1,6 +1,0 @@
-**Product: pd_electrolytic_capacitors_waste**
-
-__List of processes__
-  * [[process:ps_electrolytic_capacitors_aging_and_inspection_zhang]]
-
-__May be similar to the following products__

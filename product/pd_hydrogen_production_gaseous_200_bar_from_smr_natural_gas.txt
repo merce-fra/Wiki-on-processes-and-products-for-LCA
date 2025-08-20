@@ -1,7 +1,0 @@
-**Product: pd_hydrogen_production_gaseous_200_bar_from_smr_natural_gas**
-
-__List of processes__
-  * [[process:ps_hydrogen_production_gaseous_200_bar_from_smr_natural_gas_production]] - Quantity: None megajoule
-
-
-__May be similar to the following products__

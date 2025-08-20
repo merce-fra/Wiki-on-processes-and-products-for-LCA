@@ -1,7 +1,0 @@
-**Product: pd_fairphone4**
-
-__List of processes__
-  * [[process:ps_fairphone4_production]] - Quantity: None unit
-
-
-__May be similar to the following products__

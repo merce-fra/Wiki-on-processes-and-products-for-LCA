@@ -1,6 +1,0 @@
-**Product: pd_elements_before_soak**
-
-__List of processes__
-  * [[process:ps_winding_zhang]]
-
-__May be similar to the following products__

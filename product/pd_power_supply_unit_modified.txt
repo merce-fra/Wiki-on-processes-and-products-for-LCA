@@ -1,6 +1,0 @@
-**Product: pd_power_supply_unit**
-
-__List of processes__
-* [[process:ps_production_of_the_power_supply_unit]]
-
-__May be similar to the following products__

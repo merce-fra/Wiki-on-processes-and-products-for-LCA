@@ -1,7 +1,0 @@
-**Product: pd_water_bottle**
-
-__List of processes__
-  * [[process:ps_water_bottle_production]] - Quantity: 1 unit
-
-
-__May be similar to the following products__

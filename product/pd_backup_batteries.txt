@@ -1,6 +1,0 @@
-**Product: pd_backup_batteries**
-
-__List of processes__
-  * [[process:ps_production_of_the_backup_batteries]]
-
-__May be similar to the following products__

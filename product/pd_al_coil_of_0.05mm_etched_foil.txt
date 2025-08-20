@@ -1,6 +1,0 @@
-**Product: pd_al_coil_of_0.05mm_etched_foil**
-
-__List of processes__
-  * [[process:ps_production_of_cathode_etched_foil_zhang]]
-
-__May be similar to the following products__

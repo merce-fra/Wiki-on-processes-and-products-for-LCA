@@ -1,7 +1,0 @@
-**Product: pd_drinking_1_liter_from_a_water_bottle**
-
-__List of processes__
-  * [[process:ps_drinking_water_from_a_bottle]] - Quantity: 1 liter
-
-
-__May be similar to the following products__

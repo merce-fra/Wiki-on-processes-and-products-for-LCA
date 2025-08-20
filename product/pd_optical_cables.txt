@@ -1,6 +1,0 @@
-**Product: pd_optical_cables**
-
-__List of processes__
-  * [[process:ps_production_of_the_optical_cables]]
-
-__May be similar to the following products__

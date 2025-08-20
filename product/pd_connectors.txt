@@ -1,6 +1,0 @@
-**Product: pd_connectors**
-
-__List of processes__
-  * Ecoinvent: market for electric_connector_peripheral_type_buss | GLO
-
-__May be similar to the following products__

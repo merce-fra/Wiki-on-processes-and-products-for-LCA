@@ -1,7 +1,0 @@
-**Product: pd_ram**
-
-__List of processes__
-    * [[process:ps_ram]]
-
-__May be similar to the following products__
-

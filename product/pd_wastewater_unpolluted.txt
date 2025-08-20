@@ -1,6 +1,0 @@
-**Product: pd_wastewater_unpolluted**
-
-__List of processes__
-  * Ecoinvent: market for wastewater, unpolluted | RoW
-
-__May be similar to the following products__

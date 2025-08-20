@@ -1,6 +1,0 @@
-**Product: pd_baseband_unit**
-
-__List of processes__
-  * [[process:ps_production_of_the_baseband_unit]]
-
-__May be similar to the following products__

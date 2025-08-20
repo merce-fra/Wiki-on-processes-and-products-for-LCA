@@ -1,7 +1,0 @@
-**Product: pd_gpu**
-
-__List of processes__
-* [[process:ps_gpu_loubet]]
-* [[process:ps_nvidia_ai_gpu_chip_parameter_appa]]
-
-__May be similar to the following products__

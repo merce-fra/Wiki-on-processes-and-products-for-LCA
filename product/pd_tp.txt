@@ -1,6 +1,0 @@
-**Product: pd_tp**
-
-__List of processes__
-  * [[process:ps_production_of_anode_formed_foil_zhang]]
-
-__May be similar to the following products__

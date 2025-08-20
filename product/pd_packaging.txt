@@ -1,6 +1,0 @@
-**Product: pd_packaging**
-
-__List of processes__
-  * [[process:ps_production_and_disposal_of_the_packaging]]
-
-__May be similar to the following products__

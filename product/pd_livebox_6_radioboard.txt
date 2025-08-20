@@ -1,7 +1,0 @@
-**Product: pd_livebox_6_radioboard**
-
-__List of processes__
-  * [[process:ps_livebox_6_radioboard_production]] - Quantity: None unit
-
-
-__May be similar to the following products__

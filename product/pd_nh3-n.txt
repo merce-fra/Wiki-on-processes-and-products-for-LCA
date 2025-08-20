@@ -1,9 +1,0 @@
-**Product: pd_nh3-n**
-
-__List of processes__
-* [[process:ps_production_of_anode_formed_foil_zhang]]
-* [[process:ps_production_of_cathode_etched_foil_zhang]]
-* [[process:ps_production_of_al_blank_foil_anode_zhang]]
-* [[process:ps_production_of_al_blank_foil_cathode_zhang]]
-
-__May be similar to the following products__

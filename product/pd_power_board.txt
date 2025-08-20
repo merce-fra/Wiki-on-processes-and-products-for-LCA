@@ -1,6 +1,0 @@
-**Product: pd_power_board**
-
-__List of processes__
-  * [[process:ps_production_of_power_board]]
-
-__May be similar to the following products__

@@ -1,6 +1,0 @@
-**Product: pd_tap_water**
-
-__List of processes__
-  * Ecoinvent: market for tap water | RoW
-
-__May be similar to the following products__

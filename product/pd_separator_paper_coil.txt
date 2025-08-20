@@ -1,6 +1,0 @@
-**Product: pd_separator_paper_coil**
-
-__List of processes__
-  * [[process:ps_slitting_of_separator_paper_zhang]]
-
-__May be similar to the following products__

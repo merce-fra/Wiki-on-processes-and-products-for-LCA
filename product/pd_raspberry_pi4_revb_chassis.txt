@@ -1,6 +1,0 @@
-**Product: pd_raspberry_pi4_revb_chassis**
-
-__List of processes__
-  * [[process:ps_raspberry_pi4_revb_chassis]]
-
-__May be similar to the following products__

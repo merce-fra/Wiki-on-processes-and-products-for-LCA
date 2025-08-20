@@ -1,7 +1,0 @@
-**Product: pd_scraps_of_cathode_etched_foil**
-
-__List of processes__
-* [[process:ps_slitting_of_cathode_foil_zhang]]
-* [[process:ps_winding_zhang]]
-
-__May be similar to the following products__
