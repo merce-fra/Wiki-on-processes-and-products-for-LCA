@@ -23,8 +23,8 @@
     If there is an information provided in the source, it should be added in the section __Information__ of the process.
 
 
-    1-First step:  You generate one product file "pd_gpu.md" (the name of the file which is above the columns label row  - here "Elements ...") which contains the following information:
-    name: pd_gpu.md
+    1-First step:  You generate one product file "pd_gpu.txt" (the name of the file which is above the columns label row  - here "Elements ...") which contains the following information:
+    name: pd_gpu.txt
     **Product: pd_gpu**
 
     __List of processes__
@@ -49,7 +49,7 @@
       Raspberry_Pi4_RevB_End-of-life (process)
 
     The output should NOT be:
-    name: pd_raspberry_pi4_revb.md
+    name: pd_raspberry_pi4_revb.txt
     **Product: pd_raspberry_pi4_revb**
 
     __List of processes__
@@ -64,7 +64,7 @@
     END FILE
 
     but it should be
-    name: pd_raspberry_pi4_revb.md
+    name: pd_raspberry_pi4_revb.txt
     **Product: pd_raspberry_pi4_revb**
 
     __List of processes__
@@ -74,8 +74,8 @@
 
     END FILE
 
-    2-Second step: You generate one process file "ps_gpu_loubet.md" which contains the following information:
-    name: ps_gpu_loubet.md
+    2-Second step: You generate one process file "ps_gpu_loubet.txt" which contains the following information:
+    name: ps_gpu_loubet.txt
     **Process: ps_gpu_loubet**
 
     __Characteristics__
@@ -108,8 +108,8 @@
 
     END FILE
 
-    3-Third step: Finally, for each product like "pd_electrolytic_capacitors" or "pd_smd", if there is a process to report, you generate a page "pd_electrolytic_capacitors.md" with the following information (i.e., you put the ecoinvent process):
-    name: pd_electrolytic_capacitors.md
+    3-Third step: Finally, for each product like "pd_electrolytic_capacitors" or "pd_smd", if there is a process to report, you generate a page "pd_electrolytic_capacitors.txt" with the following information (i.e., you put the ecoinvent process):
+    name: pd_electrolytic_capacitors.txt
     **Product: pd_electrolytic_capacitors**
 
     __List of processes__
@@ -120,7 +120,7 @@
     END FILE
     If there is no information to report, you should not create a file.
 
-    For each process like "ps_production_of_water", if there are information to report, you should create a process file with the template of step 2. For instance, for the process "ps_production_of_water", you should create a file "ps_production_of_water.md". If there is no information to report, you should not create a file.
+    For each process like "ps_production_of_water", if there are information to report, you should create a process file with the template of step 2. For instance, for the process "ps_production_of_water", you should create a file "ps_production_of_water.txt". If there is no information to report, you should not create a file.
 
     You may be given several files to process. In this case, you should do the same steps for each file.
 

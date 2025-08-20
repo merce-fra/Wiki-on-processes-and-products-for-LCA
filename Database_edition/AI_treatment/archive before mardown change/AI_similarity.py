@@ -47,7 +47,7 @@ def get_product_files(base_path: str) -> list:
     product_path = os.path.join(base_path, "product")
     files = []
     for file in os.listdir(product_path):
-        if file.startswith("pd_") and file.endswith(".md"):
+        if file.startswith("pd_") and file.endswith(".txt"):
             files.append(os.path.join(product_path, file))
     return files
 
@@ -103,41 +103,41 @@ def update_product_files(similarities: dict, base_path: str):
     for source_product, similar_products in similarities.items():
         if not similar_products:  # Skip if no similar products found
             continue
-
+            
         # Construct file path
-        file_path = os.path.join(base_path, "product", f"{source_product}.md")
+        file_path = os.path.join(base_path, "product", f"{source_product}.txt")
         if not os.path.exists(file_path):
             print(f"Warning: Source product file not found: {file_path}")
             continue
-
+            
         try:
             # Read existing content
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
-
-            # Check if similarity section already exists (markdown)
-            if "## May be similar to the following products" not in content:
-                content += "\n\n## May be similar to the following products"
-
-            # Add similarity information (markdown)
-            similarity_section = "\n\n## May be similar to the following products\n"
+            
+            # Check if similarity section already exists
+            if "__May be similar to the following products__" not in content:
+                content += "\n\n__May be similar to the following products__"
+            
+            # Add similarity information
+            similarity_section = "\n\n__May be similar to the following products__\n"
             for similar in similar_products:
                 similarity_section += f"\n  * [[product:{similar['product']}]] - Similarity: {similar['similarity']}"
                 similarity_section += f" - Explanation: {similar['explanation']}\n"
-
+            
             # Replace existing similarity section or append new one
-            if "## May be similar to the following products" in content:
-                parts = content.split("## May be similar to the following products")
+            if "__May be similar to the following products__" in content:
+                parts = content.split("__May be similar to the following products__")
                 content = parts[0] + similarity_section
             else:
                 content += similarity_section
-
+            
             # Write updated content
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(content)
-
+                
             print(f"Updated similarity information for {source_product}")
-
+            
         except Exception as e:
             print(f"Error updating file {file_path}: {str(e)}")
 
@@ -162,7 +162,7 @@ def main():
     
     if response:
         # Save raw response
-        output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "product_analysis.md")
+        output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "product_analysis.txt")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(response)

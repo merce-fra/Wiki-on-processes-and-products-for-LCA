@@ -1,6 +1,6 @@
-"""
-Configuration setting.
-"""
+
+# Configuration settings for AI scripts.
+# All output and file content should use markdown format (headers, lists, etc.) for compatibility with GitHub Wiki.
 
 import os
 

@@ -1,39 +1,37 @@
 - role: system
+
   content: |
     You are a helpful AI assistant that performs the review of several processes.
     You will be provided with a concatenated files of processes. 
     Your task is to identify inconsistencies in some processes compared to the structure of the majority.
 
-    If inconsistencies are obsrrved, you should return:
-    Inconsitency 1:
-    Name of file: file_name.txt
+    If inconsistencies are observed, you should return:
+    Inconsistency 1:
+    Name of file: file_name.md
     Identified inconsistency: inconsistency description
-    Formated process with correction: the file corrected
+    Formatted process with correction: the file corrected (in markdown format)
 
-    Inconsitency 2:
-    Name of file: file_name.txt
+    Inconsistency 2:
+    Name of file: file_name.md
     Identified inconsistency: inconsistency description
-    Formated process with correction: the file corrected
+    Formatted process with correction: the file corrected (in markdown format)
 
-    If there is already an inconsistency identified in the process file, you should not add an inconsistency. Even if it is empty or contains "**Identified issue:** None". If the process already contains a section "__Inconsistency__", it should not be considered. Therefore, the corresponding file should not appear in the list of files with inconsistency in the answer. THIS IS VERY IMPORTANT, I observed that some references are included in the answer even though they contain an inconsistency section. Again, if on process has already an inconsistency section it SHOULD NOT BE INCLUDED in the answer. Hence, if all process hace already an inconsistency section, the LLM answer should be empty.
+    If there is already an inconsistency identified in the process file, you should not add an inconsistency. Even if it is empty or contains "## Identified issue: None". If the process already contains a section "## Inconsistency", it should not be considered. Therefore, the corresponding file should not appear in the list of files with inconsistency in the answer. THIS IS VERY IMPORTANT, I observed that some references are included in the answer even though they contain an inconsistency section. Again, if a process has already an inconsistency section it SHOULD NOT BE INCLUDED in the answer. Hence, if all processes have already an inconsistency section, the LLM answer should be empty.
 
-    
-    Pay attention to respect the format of the majority of the files (space etc) such that the displayed process is correctly process by the software. For instance, there are spaces before the bullet points * in the process files.
+    Pay attention to respect the format of the majority of the files (space etc) such that the displayed process is correctly processed by the software. For instance, there are spaces before the bullet points * in the process files.
     Example:
-    1 - not correct: "\n* [[ref]]"  correct: "\n  * [[ref]]"
+    1 - not correct: "\n* [ref](ref)"  correct: "\n  * [ref](ref)"
     2 - NOT correct: 
-    Chimaera (to be classified - put in process by default):
-    * [[product:PD_Electrolytic_Capacitors]] - Quantity: 5.2 g - Database: Not specified
-    * [[product:PD_SMD]] - Quantity: 22.2 g - Database: Not specified
+    Chimaera (to be classified):
+    * [pd_electrolytic_capacitors](pd_electrolytic_capacitors) - Quantity: 5.2 g - Database: Not specified
+    * [pd_smd](pd_smd) - Quantity: 22.2 g - Database: Not specified
     correct:
-    Chimaera (to be classified - put in process by default):
-      * [[product:PD_Electrolytic_Capacitors]] - Quantity: 5.2 g - Database: Not specified
-      * [[product:PD_SMD]] - Quantity: 22.2 g - Database: Not specified
-    Other example: One should have two line return before a nex section (e.g., before "Process:"). If the section are empty, it yields "Process:\n\nProduct:" and NOT "Process:\nProduct:". The double line return is important for the software to correctly process the file.
+    Chimaera (to be classified):
+      * [pd_electrolytic_capacitors](pd_electrolytic_capacitors) - Quantity: 5.2 g - Database: Not specified
+      * [pd_smd](pd_smd) - Quantity: 22.2 g - Database: Not specified
+    Other example: One should have two line returns before a next section (e.g., before "Process:"). If the sections are empty, it yields "Process:\n\nProduct:" and NOT "Process:\nProduct:". The double line return is important for the software to correctly process the file.
 
     Check that the consumption section of technosphere flow contains the three subsections product, process, and Chimaera. 
-
-    
 
 - role: user
   content: |

@@ -76,26 +76,20 @@ def create_or_update_file(base_path: str, subfolder: str, filename: str, content
     new_folder = subfolder + '_new'
     new_folder_path = os.path.join(base_path, new_folder)
     os.makedirs(new_folder_path, exist_ok=True)
-
+    
     # Normalize filename
     filename = normalize_name(filename)
-    if filename.endswith('.txt'):
-        filename = filename[:-4] + '.md'
-    elif not filename.endswith('.md'):
-        filename += '.md'
-
+    if not filename.endswith('.txt'):
+        filename += '.txt'
+    
     # Check if file exists in original folder
     original_path = os.path.join(base_path, subfolder, filename)
     new_file_path = os.path.join(new_folder_path, filename)
-
-    # Markdown section headers
-    product_sections = ["## List of processes", "## May be similar to the following products"]
-    process_sections = ["## Characteristics", "## Technosphere Flow", "## Biosphere Flow", "## Information"]
-
+    
     if os.path.exists(original_path):
         with open(original_path, 'r', encoding='utf-8') as f:
             existing_content = f.read()
-
+            
         if not is_content_different(existing_content, content):
             print(f"File {filename} already exists with same content - skipping")
             return False
@@ -107,42 +101,36 @@ def create_or_update_file(base_path: str, subfolder: str, filename: str, content
                 existing_processes = []
                 with open(original_path, 'r', encoding='utf-8') as f:
                     existing_content = f.read()
-                    if "## List of processes" in existing_content and "## May be similar" in existing_content:
-                        process_section = existing_content.split("## List of processes")[1].split("## May be similar")[0]
-                    else:
-                        process_section = ""
+                    process_section = existing_content.split("__List of processes__")[1].split("__May be similar")[0]
                     for line in process_section.splitlines():
                         if line.strip().startswith("*") and "[[process:" in line:
                             existing_processes.append(line.strip())
 
                 # Extract processes from new content
                 new_processes = []
-                if "## List of processes" in content and "## May be similar" in content:
-                    process_section = content.split("## List of processes")[1].split("## May be similar")[0]
-                else:
-                    process_section = ""
+                process_section = content.split("__List of processes__")[1].split("__May be similar")[0]
                 for line in process_section.splitlines():
                     if line.strip().startswith("*") and "[[process:" in line:
                         new_processes.append(line.strip())
-
+                
                 # If no changes in process list, skip
                 if set(existing_processes) == set(new_processes):
                     print(f"Product file {filename} has identical process list - skipping")
                     return False
-
+                
                 # Combine processes without duplicates
                 all_processes = list(dict.fromkeys(existing_processes + new_processes))
-
+                
                 # Create new content preserving format
                 base, ext = os.path.splitext(filename)
                 new_file_path = os.path.join(new_folder_path, f"{base}_modified{ext}")
-
-                header = content.split("## List of processes")[0]
-                merged_content = f"{header.strip()}\n\n## List of processes\n"
+                
+                header = content.split("__List of processes__")[0]
+                merged_content = f"{header.strip()}\n\n__List of processes__\n"
                 for process in all_processes:
                     merged_content += f"{process}\n"
-                merged_content += "\n## May be similar to the following products\n"
-
+                merged_content += "\n__May be similar to the following products__\n"
+                
                 with open(new_file_path, 'w', encoding='utf-8') as f:
                     f.write(merged_content)
                 print(f"Created merged product file in {new_folder}: {os.path.basename(new_file_path)}")
@@ -153,35 +141,43 @@ def create_or_update_file(base_path: str, subfolder: str, filename: str, content
                 return False
         else:
             # For process files, ensure standard sections are present
+            process_sections = [
+                "__Characteristics__",
+                "__Technosphere Flow__",
+                "__Biosphere Flow__",
+                "__Information__"
+            ]
+            
+            # Create new version with standard sections
             base, ext = os.path.splitext(filename)
             counter = 1
             while os.path.exists(os.path.join(new_folder_path, f"{base}_{counter}{ext}")):
                 counter += 1
             new_file_path = os.path.join(new_folder_path, f"{base}_{counter}{ext}")
-
+            
             new_content = content
             for section in process_sections:
                 if section not in content:
                     new_content += f"\n\n{section}\n"
-
+            
             with open(new_file_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
             print(f"Created new version in {new_folder}: {os.path.basename(new_file_path)}")
             return True
-
+    
     # For completely new files
     try:
         if subfolder == 'product':
-            if "## List of processes" not in content:
-                content += "\n\n## List of processes\n"
-            if "## May be similar to the following products" not in content:
-                content += "\n\n## May be similar to the following products\n"
+            if "__List of processes__" not in content:
+                content += "\n\n__List of processes__\n"
+            if "__May be similar to the following products__" not in content:
+                content += "\n\n__May be similar to the following products__\n"
         else:
             # Ensure process files have all required sections
-            for section in process_sections:
+            for section in ["__Characteristics__", "__Technosphere Flow__", "__Biosphere Flow__", "__Information__"]:
                 if section not in content:
                     content += f"\n\n{section}\n"
-
+        
         with open(new_file_path, 'w', encoding='utf-8') as f:
             f.write(content.strip() + '\n')
         print(f"Created new file in {new_folder}: {os.path.basename(new_file_path)}")
@@ -198,7 +194,7 @@ def parse_and_create_files(api_response: str, base_path: str):
     
     for line in lines:
         line_stripped = line.strip()
-
+        
         # Check for file name marker
         if line_stripped.startswith('name:'):
             # If we have a previous file, save it
@@ -207,13 +203,11 @@ def parse_and_create_files(api_response: str, base_path: str):
                 if create_or_update_file(base_path, subfolder, current_file, '\n'.join(current_content)):
                     print(f"Added {'product' if current_file.startswith('pd_') else 'process'} to database: {current_file}")
                 current_content = []
-
+            
             # Get new filename and normalize it
             current_file = normalize_name(line_stripped.split(':', 1)[1].strip())
-            if current_file.endswith('.txt'):
-                current_file = current_file[:-4] + '.md'
-            elif not current_file.endswith('.md'):
-                current_file += '.md'
+            if not current_file.endswith('.txt'):
+                current_file += '.txt'
             print(f"Processing file: {current_file}")
             continue
             
@@ -261,7 +255,7 @@ def main():
     response_text = response_data["choices"][0]["message"]["content"]
 
     # Save raw response
-    output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "generate_pages_analysis.md")
+    output_path = os.path.join(base_path, "Database_edition","AI_treatment", "output", "generate_pages_analysis.txt")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(response_text)

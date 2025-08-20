@@ -50,8 +50,8 @@ def get_process_files(base_path: str) -> list:
         return files
 
     for file in os.listdir(process_path):
-        # Match files that have ps_ prefix and .md extension in name
-        if (file.lower().startswith("ps_")) and file.endswith(".md"):
+        # Match files that have ps_ prefix and .txt extension in name
+        if (file.lower().startswith("ps_")) and file.endswith(".txt"):
             # Return full file path 
             file_path = os.path.join(process_path, file)
             if os.path.isfile(file_path):  # Verify it's actually a file
@@ -122,34 +122,33 @@ def parse_inconsistencies(api_response: str) -> list:
 def update_process_files(inconsistencies: list, base_path: str):
     """Update process files with inconsistency information."""
     process_dir = os.path.join(base_path, "process")
-
+    
     # Create a case-insensitive mapping of filenames to actual filenames
     file_map = {}
     if os.path.exists(process_dir):
         for file in os.listdir(process_dir):
-            # Store both with and without .md extension
-            base_name = file[:-3] if file.endswith('.md') else file
+            # Store both with and without .txt extension
+            base_name = file[:-4] if file.endswith('.txt') else file
             file_map[base_name.lower()] = file
             file_map[file.lower()] = file
 
     for inconsistency in inconsistencies:
         filename = inconsistency.get('filename', '').strip()
         if not filename:
-            print(f"Warning: Inconsistency entry missing filename.")
             continue
-
-        # Try both with and without .md extension
-        filename_with_ext = filename if filename.endswith('.md') else f"{filename}.md"
-        filename_without_ext = filename[:-3] if filename.endswith('.md') else filename
-
+            
+        # Try both with and without .txt extension
+        filename_with_ext = filename if filename.endswith('.txt') else f"{filename}.txt"
+        filename_without_ext = filename[:-4] if filename.endswith('.txt') else filename
+        
         # Look for actual filename using both versions
         actual_filename = (file_map.get(filename_with_ext.lower()) or 
                          file_map.get(filename_without_ext.lower()))
-
+        
         if not actual_filename:
             print(f"Warning: Process file not found: {filename}")
             continue
-
+            
         file_path = os.path.join(process_dir, actual_filename)
         try:
             # Read existing content
@@ -157,27 +156,26 @@ def update_process_files(inconsistencies: list, base_path: str):
                 content = f.read()
 
             # Only add inconsistency section if it doesn't exist
-            if "## Inconsistency" not in content:
+            if "__Inconsistency__" not in content:
                 # Get the corrected content from the inconsistency
                 corrected_content = inconsistency.get('correction', '').strip()
                 if not corrected_content:
-                    print(f"Warning: No correction content for {actual_filename}")
                     continue
-
-                # Add inconsistency information section (markdown)
-                inconsistency_section = "\n\n## Inconsistency\n"
+                    
+                # Add inconsistency information section
+                inconsistency_section = "\n\n__Inconsistency__\n"
                 inconsistency_section += f"\n**Identified issue:** {inconsistency['description']}\n"
                 inconsistency_section += f"\n**Suggested correction:**\n\n{corrected_content}\n"
-
+                
                 # Append the inconsistency section to the original content
                 content += inconsistency_section
-
+                
                 # Write updated content
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(content)
-
+                    
                 print(f"Updated inconsistency information for {actual_filename}")
-
+            
         except Exception as e:
             print(f"Error updating file {file_path}: {str(e)}")
 
@@ -202,7 +200,7 @@ def main():
     
     if response:
         # Save raw response
-        output_path = os.path.join(base_path, "AI_treatment", "output", "process_inconsistency_analysis.md")
+        output_path = os.path.join(base_path, "AI_treatment", "output", "process_inconsistency_analysis.txt")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(response)
