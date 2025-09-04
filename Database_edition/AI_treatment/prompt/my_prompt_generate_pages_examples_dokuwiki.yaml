@@ -25,12 +25,12 @@
 
     1-First step:  You generate one product file "pd_gpu.md" (the name of the file which is above the columns label row  - here "Elements ...") which contains the following information:
     name: pd_gpu.md
-    **Product: pd_gpu**
+    # Product: pd_gpu
 
-    __List of processes__
-      * [[process:ps_gpu_loubet]]
+    ## List of processes
+    * [ps_gpu_loubet]
     
-    __May be similar to the following products__
+    ## May be similar to the following products
 
     END FILE
 
@@ -50,72 +50,72 @@
 
     The output should NOT be:
     name: pd_raspberry_pi4_revb.md
-    **Product: pd_raspberry_pi4_revb**
+    # Product: pd_raspberry_pi4_revb
 
-    __List of processes__
-      * [[process:ps_raspberry_pi4_revb_assembly]]
-      * [[process:ps_raspberry_pi4_revb_packaging]]
-      * [[process:ps_raspberry_pi4_revb_transport]]
-      * [[process:ps_raspberry_pi4_revb_use]]
-      * [[process:ps_raspberry_pi4_revb_end-of-life]]
+    ## List of processes
+    * [ps_raspberry_pi4_revb_assembly](ps_raspberry_pi4_revb_assembly)
+    * [ps_raspberry_pi4_revb_packaging](ps_raspberry_pi4_revb_packaging)
+    * [ps_raspberry_pi4_revb_transport](ps_raspberry_pi4_revb_transport)
+    * [ps_raspberry_pi4_revb_use](ps_raspberry_pi4_revb_use)
+    * [ps_raspberry_pi4_revb_end-of-life](ps_raspberry_pi4_revb_end-of-life)
 
-    __May be similar to the following products__
+    ## May be similar to the following products
     
     END FILE
 
     but it should be
     name: pd_raspberry_pi4_revb.md
-    **Product: pd_raspberry_pi4_revb**
+    # Product: pd_raspberry_pi4_revb
 
-    __List of processes__
-      * [[process:ps_raspberry_pi4_revb]]
+    ## List of processes
+    # [process:ps_raspberry_pi4_revb]
 
-    __May be similar to the following products__
+    ## May be similar to the following products
 
     END FILE
 
     2-Second step: You generate one process file "ps_gpu_loubet.md" which contains the following information:
     name: ps_gpu_loubet.md
-    **Process: ps_gpu_loubet**
+    # Process: ps_gpu_loubet
 
-    __Characteristics__
+    ## Characteristics
 
 
-    __Technosphere Flow__
+    ## Technosphere Flow
 
-    **Production**
-      * [[product:pd_gpu]] - Quantity: None unit
+    ### Production
+    * [pd_gpu](pd_gpu) - Quantity: None unit
 
-    **Consumption**
+    ### Consumption
 
     Product:
-      * [[product:pd_electrolytic_capacitors]] - Quantity: 5.2 g - Amount: 4 - Database: Not specified
-      * [[product:pd_smd]] - Quantity: 22.2 g - Amount: 258 - Database: Not specified
-      * [[product:pd_ics]] - Quantity: 10.0 g - Amount: 2 - Database: Not specified
-      * [[product:pd_memory_ics]] - Quantity: 8.0 g - Amount: 4 - Database: Not specified
-      * [[product:pd_die]] - Quantity: 81.0 mm2 - Amount: 1 - Database: Not specified
-      * [[product:pd_pcb]] - Quantity: 10336.0 mm2 - Amount: 1 - Database: Not specified
-      * [[product:pd_connectors]] - Quantity: 20.0 g - Amount: 3 - Database: Not specified
+      * [pd_electrolytic_capacitors](pd_electrolytic_capacitors) - Quantity: 5.2 g - Amount: 4 - Database: Not specified
+      * [pd_smd](pd_smd) - Quantity: 22.2 g - Amount: 258 - Database: Not specified
+      * [pd_ics](pd_ics) - Quantity: 10.0 g - Amount: 2 - Database: Not specified
+      * [pd_memory_ics](pd_memory_ics) - Quantity: 8.0 g - Amount: 4 - Database: Not specified
+      * [pd_die](pd_die) - Quantity: 81.0 mm2 - Amount: 1 - Database: Not specified
+      * [pd_pcb](pd_pcb) - Quantity: 10336.0 mm2 - Amount: 1 - Database: Not specified
+      * [pd_connectors](pd_connectors) - Quantity: 20.0 g - Amount: 3 - Database: Not specified
 
     Process:
-      * [[process:ps_production_of_water]] - Quantity: 20.0 l - Database: Not specified
+    * [ps_production_of_water](ps_production_of_water) - Quantity: 20.0 l - Database: Not specified
 
     Chimaera (to be classified - put in process by default):
 
-    __Biosphere Flow__
+    ## Biosphere Flow
 
-    __Information__
+    ## Information
 
     END FILE
 
     3-Third step: Finally, for each product like "pd_electrolytic_capacitors" or "pd_smd", if there is a process to report, you generate a page "pd_electrolytic_capacitors.md" with the following information (i.e., you put the ecoinvent process):
     name: pd_electrolytic_capacitors.md
-    **Product: pd_electrolytic_capacitors**
+    # Product: pd_electrolytic_capacitors
 
-    __List of processes__
-      * Ecoinvent: market for capacitor, electrolyte type, < 2cm height | GLO
+    ## List of processes
+    * Ecoinvent: market for capacitor, electrolyte type, < 2cm height | GLO
 
-    __May be similar to the following products__
+    ## May be similar to the following products
 
     END FILE
     If there is no information to report, you should not create a file.
