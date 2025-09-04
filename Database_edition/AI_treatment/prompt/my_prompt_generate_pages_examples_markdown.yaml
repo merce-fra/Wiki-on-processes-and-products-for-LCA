@@ -89,13 +89,13 @@
     ### Consumption
 
     Product:
-      * [pd_electrolytic_capacitors](pd_electrolytic_capacitors) - Quantity: 5.2 g - Amount: 4 - Database: Not specified
-      * [pd_smd](pd_smd) - Quantity: 22.2 g - Amount: 258 - Database: Not specified
-      * [pd_ics](pd_ics) - Quantity: 10.0 g - Amount: 2 - Database: Not specified
-      * [pd_memory_ics](pd_memory_ics) - Quantity: 8.0 g - Amount: 4 - Database: Not specified
-      * [pd_die](pd_die) - Quantity: 81.0 mm2 - Amount: 1 - Database: Not specified
-      * [pd_pcb](pd_pcb) - Quantity: 10336.0 mm2 - Amount: 1 - Database: Not specified
-      * [pd_connectors](pd_connectors) - Quantity: 20.0 g - Amount: 3 - Database: Not specified
+    * [pd_electrolytic_capacitors](pd_electrolytic_capacitors) - Quantity: 5.2 g - Amount: 4 - Database: Not specified
+    * [pd_smd](pd_smd) - Quantity: 22.2 g - Amount: 258 - Database: Not specified
+    * [pd_ics](pd_ics) - Quantity: 10.0 g - Amount: 2 - Database: Not specified
+    * [pd_memory_ics](pd_memory_ics) - Quantity: 8.0 g - Amount: 4 - Database: Not specified
+    * [pd_die](pd_die) - Quantity: 81.0 mm2 - Amount: 1 - Database: Not specified
+    * [pd_pcb](pd_pcb) - Quantity: 10336.0 mm2 - Amount: 1 - Database: Not specified
+    * [pd_connectors](pd_connectors) - Quantity: 20.0 g - Amount: 3 - Database: Not specified
 
     Process:
     * [ps_production_of_water](ps_production_of_water) - Quantity: 20.0 l - Database: Not specified
