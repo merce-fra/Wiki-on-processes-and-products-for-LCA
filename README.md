@@ -1,4 +1,5 @@
 # Project Overview
+[Update (05/09/2025): We added python script to automatically builds a dependency tree starting from a chosen product or process in the Mermaid .mmd format. The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd`. If a product node can be produced by several processes (e.g., if several processes are listed in the 'List of processes' section of the page), this product node appears in red in the graph. This indicates that one must then decide which subtree to follow among the possible options when building the system.]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
 
