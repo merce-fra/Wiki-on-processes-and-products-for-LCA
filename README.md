@@ -7,7 +7,7 @@ This project consists of three main parts:
 
 1. **The Wiki**  
    A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **inventory** part of a Life Cycle Assessment (LCA) study.
-   You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) or install it on dokuwiki.
+   You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki).
    
    Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki.
 
@@ -37,10 +37,6 @@ The standard way to proceed is the following:
 
 Maintainers will review your proposal.
 If the pages are accepted, maintainers will use the code `convert_to_github_wiki.py` to automatically update the Wiki of this GitHub.
-
-# Installation on Dokuwiki
-
-To install the dokuwiki version of the project, place the files in the `\dokuwiki\data\pages\` directory of your DokuWiki installation.
 
 # Overview of the AI-based Data Management System
 
