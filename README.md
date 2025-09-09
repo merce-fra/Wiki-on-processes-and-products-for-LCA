@@ -30,7 +30,7 @@ You can contribute by:
 - Improving the python scripts to automatically import data.
 
 The standard way to proceed is the following:
-1. Fork and clone this repo `Wiki-on-processes-and-products-for-LCA` AND the repo of the wiki pages `Wiki-on-processes-and-products-for-LCA.wiki`
+1. Clone this repo `Wiki-on-processes-and-products-for-LCA` AND the repo of the wiki pages `Wiki-on-processes-and-products-for-LCA.wiki`
 2. Create a new branch and make your changes and commit
 3. Push your branch: `git push origin your-feature`
 4. Open a Pull Request from your fork
