@@ -19,14 +19,14 @@ This project consists of three main parts:
 3. **AI-based Wiki Edition**  
    This tool integrates AI to assist in the management of the Wiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
 
-# Accessing the Wiki (on this GitHub) 
+# Accessing the Wiki (on this GitHub)
 
 Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) to access the Wiki on this gihub.
 
 # How to contribute
 
 You can contribute by:
-- Adding process or product pages (with or without using the python script to import the data). The pages should be added in the dokuwiki format (see the pages in the `process/` and `product/` folders of this repository).
+- Adding process or product pages (with or without using the python script to import the data).
 - Improving the python scripts to automatically import data.
 
 The standard way to proceed is the following:
