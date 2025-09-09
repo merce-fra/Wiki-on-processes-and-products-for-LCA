@@ -41,7 +41,7 @@ from build_lca_tree_helper import *
 #SCRIPT_DIR = Path(__file__).resolve().parent
 WORKING_DIR = Path.cwd()
 SCRIPT_DIR = WORKING_DIR / "wiki-on-processes-and-products-for-LCA.wiki"
-File_name_no_ext = "pd_dell_3620_computer"
+File_name_no_ext = "pd_resistance_production"
 
 CONFIG = {
     "ROOT_ID": "product/" + File_name_no_ext + ".md",  

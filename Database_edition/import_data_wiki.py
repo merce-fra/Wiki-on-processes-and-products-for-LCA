@@ -10,7 +10,7 @@ import os
 # Define paths for database files
 base_path_source = "./Wiki-on-processes-and-products-for-LCA/"  # EDIT THIS PATH IF NEEDED, parent folder for source files
 base_path_target = "./Wiki-on-processes-and-products-for-LCA.wiki/"  # Parent folder for generated wiki markdown files
-source_file_path = "Database_edition/source_import/Example_bw/Fairphone_4.xlsx"  
+source_file_path = "Database_edition/source_import/smd_resistor.xlsx"  
 path = base_path_source + source_file_path
 imp = ExcelImporter(path) #Brightway import function to import data from Excel files
 
@@ -148,7 +148,7 @@ for record in imp.data:
                 break
             if exchange['type'] == "biosphere":
                 bio_link = f"bp_{exchange['name'].replace(' ', '_')}"
-                content += f"* [{bio_link}]({bio_link}) - Quantity: {exchange['amount']} {exchange['unit']} - Database: {exchange['database']}\n"
+                content += f"* [{bio_link}]({bio_link}) - Quantity: {exchange['amount']} {exchange['unit']} - Database: \n" #{exchange['database']}
 
         content += "\n\n## Information\n\n\n  * Source file: {os.path.basename(path)}\n"
         # Optionally add more metadata here, e.g. author, document link, etc.
