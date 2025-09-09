@@ -36,7 +36,6 @@ The standard way to proceed is the following:
 4. Open a Pull Request from your fork
 
 Maintainers will review your proposal.
-If the pages are accepted, maintainers will use the code `convert_to_github_wiki.py` to automatically update the Wiki of this GitHub.
 
 # Overview of the AI-based Data Management System
 
