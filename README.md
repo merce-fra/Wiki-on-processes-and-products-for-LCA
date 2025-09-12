@@ -22,14 +22,12 @@ This project consists of three main parts:
 
 # Vision
 
-This open wiki is designed to efficiently list and compare multiple approaches for performing the inventory of a product. In practice, several processes may exist to produce the same product, each for different reasons. By documenting these alternatives, researchers gain a valuable resource to compare methods, assess trade-offs, and explore innovations.
-
-As of 12/09/2025, the wiki includes, for example:
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. In practice, **several processes may exist to produce the same product**. By documenting these alternatives, researchers gain a valuable resource to compare methods, assess trade-offs, and explore innovations. For example:
 
 - **Electrolytic capacitors**  
-  - The ecoinvent reference to produce a [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
-  - A second process was imported from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
-  - The `build_lca_tree.py` script also identified that two alternative processes now exist for the same node in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). This enables researchers studying the Dell computer to update their LCA with the alternative solution.
+  - The ecoinvent reference to produce an [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
+  - A second process was imported as data from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
+  - The `build_lca_tree.py` script identifies that two alternative processes now exist for the same node in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
 
 - **GPU production**  
   - Two different processes are documented for the [GPU product](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu).  
@@ -37,13 +35,9 @@ As of 12/09/2025, the wiki includes, for example:
 
 
 
-# Tentative parametric approach (edited the 12/09/2025)
+# Tentative parametric approach 
 
-The example of Appa’s parametric GPU model ([Appa GPU Build](https://appalca.github.io/in_depth/appa_build_in_depth.html)) has been added to the wiki to help identify necessary adaptations. The process is now listed under the [GPU product page](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu) of the wiki. There are now two parallel GPU processes:
-- The Appa GPU process
-- The ps_gpu_loubet process described in the paper “Life cycle assessment of ICT in higher education”
-
-In the [Appa GPU process branch](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_nvidia_ai_gpu_chip_parameter_appa), the wiki page structure was updated as follow to handle the parametric model:
+[edited the 12/09/2025] The example of Appa’s parametric GPU model ([Appa GPU Build](https://appalca.github.io/in_depth/appa_build_in_depth.html)) has been added to the wiki to help identify necessary adaptations. This process is now listed under the [GPU product page](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu) of the wiki. In the [Appa GPU process branch](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_nvidia_ai_gpu_chip_parameter_appa), the wiki page structure was updated as follow to handle the parametric model:
 -	New “Parameters” section: List of the input parameter names.
 -	New “parameters” field: Added to the metadata following a process name in the “Consumption” section.
 -	New “Impact Flow” section: Allows for impact formulas based on parameters (e.g., see [logic_wafer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_logic_wafer_manufacturing)).
