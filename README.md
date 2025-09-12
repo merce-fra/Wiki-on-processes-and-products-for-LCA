@@ -29,7 +29,7 @@ For example:
 - **Electrolytic capacitors**  
   - The ecoinvent reference to produce an [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
   - A second process was imported as data from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
-  - The `build_lca_tree.py` script identifies that two alternative processes now exist for the same node in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
+  - The `build_lca_tree.py` script identifies that two alternative processes now exist for the node [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer) node. This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
 
 - **GPU production**  
   - Two different processes are documented for the [GPU product](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu).  
