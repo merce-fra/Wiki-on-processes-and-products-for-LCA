@@ -1,5 +1,5 @@
 # Project Overview
-[Update (05/09/2025): We added a python script to automatically build a dependency tree starting from a chosen product or process, with the output in the Mermaid .mmd format. The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki). If a product node can be produced by several processes (e.g., if several processes are listed in the 'List of processes' section of the product page), this product node appears in red in the graph. This indicates that one must then decide which subtree to follow among the possible options when building the system.]
+[Update (05/09/2025): We added a python script to automatically build a dependency tree starting from a chosen product or process node, with the output in the Mermaid .mmd format. The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki). If a product node can be produced by several processes (e.g., if several processes are listed in the 'List of processes' section of the product page), this product node appears in red in the graph. This indicates that one must then decide which subtree to follow among the possible options when building the system.]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
 
@@ -31,11 +31,8 @@ You can contribute by:
 
 The standard way to proceed is the following:
 1. Clone this repo `Wiki-on-processes-and-products-for-LCA` AND the repo of the wiki pages `Wiki-on-processes-and-products-for-LCA.wiki` (a recommanded practice is to have a workspace folder where you put these two repos).
-2. Create a new branch and make your changes and commit
-3. Push your branch: `git push origin your-feature`
-4. Open a Pull Request from your fork
+2. So far the wiki repo does not suport github merge features. We are investigating solutions. Don't hesitate to create an issue or contact the maintainters if you want to add data.
 
-Maintainers will review your proposal.
 
 # Overview of the AI-based Data Management System
 
