@@ -22,7 +22,9 @@ This project consists of three main parts:
 
 # Vision
 
-This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. In practice, **several processes may exist to produce the same product**. By documenting these alternatives, researchers gain a valuable resource to compare methods, assess trade-offs, and explore innovations. For example:
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. In practice, **several processes may exist to produce the same product**. Moreover, scientific contribution are refferenced by the end product produced but may include sub-process data valauble for other study. This wiki aims at references data per per process to address this indexing limitation.
+By documenting these alternatives, researchers may gain a valuable resource to easily compare existing alternatives according to their needs. 
+For example:
 
 - **Electrolytic capacitors**  
   - The ecoinvent reference to produce an [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
