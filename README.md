@@ -1,16 +1,16 @@
-# Project Overview
 [Update (05/09/2025): We added a python script to automatically build a **dependency tree** starting from a chosen product or process node, with the output in the Mermaid .mmd format. Click [here](./graph_pd_dell_3620_computer.png) to see an example. If a **product node can be produced by several processes** (e.g., if several processes are listed in the 'List of processes' section of the product page), **this product node appears in red in the graph**. This indicates that one must then decide which subtree to follow among the possible options when building the system.
-The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki). ]
+The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki).]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
+
+# Project Overview
 
 This project consists of three main parts:
 
 1. **The Wiki**  
    A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **inventory** part of a Life Cycle Assessment (LCA) study.
-   You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki).
-   
-   Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki.
+   You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki). Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki.
+
 
 2. **The import function for Brightway-formatted data**  
    The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. New pages are automatically created in folders `Wiki-on-processes-and-products-for-LCA.wiki/process_new/` and `Wiki-on-processes-and-products-for-LCA.wiki/product_new/` . If the pages are satisfactory, they should then be manually moved to the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`. One can have a look at the folder `Database_edition/source_import/Example_bw/` for examples of Brightway-formatted excel files.
@@ -20,9 +20,37 @@ This project consists of three main parts:
 3. **AI-based Wiki Edition**  
    This tool integrates AI to assist in the management of the Wiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
 
-# Accessing the Wiki (on this GitHub)
+# Vision
 
-Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki) to access the Wiki on this gihub.
+This open wiki is designed to efficiently list and compare multiple approaches for performing the inventory of a product. In practice, several processes may exist to produce the same product, each for different reasons. By documenting these alternatives, researchers gain a valuable resource to compare methods, assess trade-offs, and explore innovations.
+
+As of 12/09/2025, the wiki includes, for example:
+
+- **Electrolytic capacitors**  
+  - The ecoinvent reference to produce a [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
+  - A second process was imported from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
+  - The `build_lca_tree.py` script also identified that two alternative processes now exist for the same node in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). This enables researchers studying the Dell computer to update their LCA with the alternative solution.
+
+- **GPU production**  
+  - Two different processes are documented for the [GPU product](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu).  
+
+
+
+
+# Tentative parametric approach (edited the 12/09/2025)
+
+The example of Appa’s parametric GPU model ([Appa GPU Build](https://appalca.github.io/in_depth/appa_build_in_depth.html)) has been added to the wiki to help identify necessary adaptations. The process is now listed under the [GPU product page](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu) of the wiki. There are now two parallel GPU processes:
+- The Appa GPU process
+- The ps_gpu_loubet process described in the paper “Life cycle assessment of ICT in higher education”
+
+In the [Appa GPU process branch](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_nvidia_ai_gpu_chip_parameter_appa), the wiki page structure was updated as follow to handle the parametric model:
+-	New “Parameters” section: List of the input parameter names.
+-	New “parameters” field: Added to the metadata following a process name in the “Consumption” section.
+-	New “Impact Flow” section: Allows for impact formulas based on parameters (e.g., see [logic_wafer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_logic_wafer_manufacturing)).
+- Models (based on Appa’s “Parameter Matching”):
+   -  If a model is used by a single process, it is added as a local model under that process.
+   -	If a model is used by multiple processes, consider creating a Global Model section to avoid duplication.
+
 
 # How to contribute
 
