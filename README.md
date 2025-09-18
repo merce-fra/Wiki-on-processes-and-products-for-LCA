@@ -55,7 +55,7 @@ You can contribute by:
 
 The standard way to proceed is the following:
 1. Clone this repo `Wiki-on-processes-and-products-for-LCA` AND the repo of the wiki pages `Wiki-on-processes-and-products-for-LCA.wiki` (a recommanded practice is to have a workspace folder where you put these two repos).
-2. So far the wiki repo does not suport github merge features. We are investigating solutions. Don't hesitate to create an issue or contact the maintainters if you want to add data.
+2. So far the wiki repo does not support github merge features. We are investigating solutions. Don't hesitate to create an issue or contact the maintainters if you want to add data.
 
 
 # Overview of the AI-based Data Management System
