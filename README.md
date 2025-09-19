@@ -16,10 +16,9 @@ This project consists of three main parts:
 
    If new pages are added in the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`, the `ps_db.md` and `pd_db.md` files (where all the pages are listed) should be updated by running the script `update_database_list.py`. If some pages were updated online via the wiki, you should pull before performing changes.
 
-3. **Visualisation function**
-
+3. **Visualisation function**  
    The script `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py` automatically build a **dependency tree** starting from a chosen product or process node, with **identification of alternative process nodes**. The output is in the Mermaid format. Click [here](./graph_pd_dell_3620_computer.png) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). 
-   
+
    On the identification of alternative process nodes: If a **product node can be produced by several processes** (e.g., if several processes are listed in the 'List of processes' section of the product page), **this product node appears in red in the graph**. This indicates that one must then decide which subtree to follow among the possible options when building the system. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki).
 
 4. **AI-based Wiki Edition**  
