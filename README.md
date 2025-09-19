@@ -59,7 +59,7 @@ The standard way to proceed is the following:
 
 ## Details on the import script for Brightway-formatted data
 
-When using the script The script `import_data_wiki.py`, new pages are automatically created in folders `Wiki-on-processes-and-products-for-LCA.wiki/process_new/` and `Wiki-on-processes-and-products-for-LCA.wiki/product_new/`. If the pages are satisfactory, they should then be manually moved to the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`. One can have a look at the folder `Database_edition/source_import/Example_bw/` for examples of Brightway-formatted excel files.
+When using the script `import_data_wiki.py`, new pages are automatically created in folders `Wiki-on-processes-and-products-for-LCA.wiki/process_new/` and `Wiki-on-processes-and-products-for-LCA.wiki/product_new/`. If the pages are satisfactory, they should then be manually moved to the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`. One can have a look at the folder `Database_edition/source_import/Example_bw/` for examples of Brightway-formatted excel files.
 
 If new pages are added in the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`, the `ps_db.md` and `pd_db.md` files (where all the pages are listed) should be updated by running the script `update_database_list.py`. If some pages were updated online via the wiki, you should pull before performing changes.
 
