@@ -1,5 +1,4 @@
-[Update (05/09/2025): We added a python script to automatically build a **dependency tree** starting from a chosen product or process node, with the output in the Mermaid .mmd format. Click [here](./graph_pd_dell_3620_computer.png) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). If a **product node can be produced by several processes** (e.g., if several processes are listed in the 'List of processes' section of the product page), **this product node appears in red in the graph**. This indicates that one must then decide which subtree to follow among the possible options when building the system. 
-The script is `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py`. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki).]
+[Update (05/09/2025): We added a python script to automatically build a **dependency tree**, with identification of alternative process nodes, starting from a chosen product or process node. See "3. Visualisation function" below.]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
 
@@ -17,19 +16,22 @@ This project consists of three main parts:
 
    If new pages are added in the folders `Wiki-on-processes-and-products-for-LCA.wiki/process/` and `Wiki-on-processes-and-products-for-LCA.wiki/product/`, the `ps_db.md` and `pd_db.md` files (where all the pages are listed) should be updated by running the script `update_database_list.py`. If some pages were updated online via the wiki, you should pull before performing changes.
 
-3. **AI-based Wiki Edition**  
+3. **Visualisation function**
+The script `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py` automatically build a **dependency tree** starting from a chosen product or process node, with **identification of alternative process nodes**. The output is in the Mermaid format. Click [here](./graph_pd_dell_3620_computer.png) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer). 
+On the identification of alternative process nodes: If a **product node can be produced by several processes** (e.g., if several processes are listed in the 'List of processes' section of the product page), **this product node appears in red in the graph**. This indicates that one must then decide which subtree to follow among the possible options when building the system. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki).
+
+4. **AI-based Wiki Edition**  
    This tool integrates AI to assist in the management of the Wiki. It automates tasks such as page generation (for not brightway-compliant data), inconsistency detection, and product similarity analysis, ensuring the wiki remains consistent, accurate, and up-to-date.
 
 # Vision
 
-This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. In practice, **several processes may exist to produce the same product**. Moreover, scientific contributions are often referenced by the end product, but may also include sub-process data valuable for other studies. This wiki addresses this limitation by **referencing data at the process level**, ensuring better indexing and reusability.  
-By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. In practice, **several processes may exist to produce the same product**. Moreover, scientific contributions are often referenced by the end product, but may also include sub-process data valuable for other studies. This wiki addresses this limitation by **referencing data at the process level**, ensuring better indexing and reusability.   By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
 For example:
 
 - **Electrolytic capacitors**  
   - The ecoinvent reference to produce an [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
   - A second process was imported as data from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
-  - The `build_lca_tree.py` script identifies that two alternative processes now exist for the node [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer) node. This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
+  - The `build_lca_tree.py` script (see "3. Visualisation function" above) identifies that two alternative processes now exist for the node [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer) node. This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
 
 - **GPU production**  
   - Two different processes are documented for the [GPU product](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu).  
