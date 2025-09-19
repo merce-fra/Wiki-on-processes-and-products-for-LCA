@@ -12,7 +12,7 @@ This project consists of three main parts:
 
 
 2. **The import function for Brightway-formatted data**  
-   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format (with the brightway import function) to generate files from brightway-compatible data in Excel. See the section "Details on the import script for Brightway-formatted data" below for technical details.
+   The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format to generate wiki pages from brightway-compatible data in Excel. See the section "Details on the import script for Brightway-formatted data" below for technical details.
 
 3. **Visualisation function**  
    The script `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py` automatically build a **dependency tree** starting from a chosen product or process node, with **identification of alternative process nodes**. The output is in the Mermaid format. Click [here](./graph_pd_dell_3620_computer.png) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
