@@ -31,11 +31,12 @@ This project consists of four main parts:
 
 # Vision
 
-This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. 
+Currently, performing the inventory step of a LCA includes the following challenges: 
 * **Several processes may exist to produce the same product**. 
-* Moreover, **scientific contributions** are often referenced by the end product, but may also **include sub-process data valuable** for other studies. 
+* **Scientific contributions** are often referenced by the end product, but may also **include sub-process data valuable** for other studies. 
 
-This wiki addresses this limitation by **referencing data at the process level**, ensuring better indexing and reusability.   By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. It references data at **the process level**.  
+By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
 The following example illustrates this idea.
 
 - **Electrolytic capacitors**  
