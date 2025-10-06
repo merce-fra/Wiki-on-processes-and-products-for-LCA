@@ -134,7 +134,7 @@ for record in imp.data:
         content = f"# Product: {prod_name}\n\n\n## List of processes\n\n"
         # Only add root node info if this is the detected root product node
         if prod_name == root_product_detected:
-            content += f"* [{process_name}]({process_name})\n    * Original process for product as root node. \n    * Original LCI scope: {root_node_LCI_scope}.\n    * Original tree path: [TREE_PATH_PLACEHOLDER](TREE_PATH_PLACEHOLDER) | [Tree Diagram](TREE_PATH_PLACEHOLDER.png)\n\n"
+            content += f"* [{process_name}]({process_name})\n    * Original process for product as root node. \n    * Original LCI scope: {root_node_LCI_scope}.\n    * Original tree path: [TREE_PATH_PLACEHOLDER](TREE_PATH_PLACEHOLDER) | [Tree Diagram](root_node_path/TREE_PATH_PLACEHOLDER.svg)\n\n"
         else:
             content += f"* [{process_name}]({process_name}) - Quantity: {amount} {unit}\n\n"
         content += "\n## May be similar to the following products"

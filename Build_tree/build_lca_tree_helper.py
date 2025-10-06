@@ -542,6 +542,9 @@ def to_mermaid(tree: Dict, index: Dict[str, Dict]) -> str:
     def add_node(node_id: str):
         if node_id in seen_nodes:
             return
+        # Skip rn_ files (root node files) from the tree diagram
+        if node_id.startswith('rn_'):
+            return
         info = index.get(node_id, {'id': node_id, 'type': infer_node_type_from_id(node_id), 'title': node_id})
         # label = f"{info['title']}\\n({info['type']})"
         
@@ -581,8 +584,14 @@ def to_mermaid(tree: Dict, index: Dict[str, Dict]) -> str:
         return f"{rel}\\n{qpart}" if qpart else rel
 
     def walk(n: Dict):
+        # Skip rn_ files (root node files) from the tree diagram
+        if n['id'].startswith('rn_'):
+            return
         add_node(n['id'])
         for ch in n.get('children', []):
+            # Skip edges involving rn_ files
+            if ch['source'].startswith('rn_') or ch['target'].startswith('rn_'):
+                continue
             #  Skip edges with rel == "produced_by"
             src = sanitize_mermaid_id(ch['source'])
             tgt = sanitize_mermaid_id(ch['target'])
