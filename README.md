@@ -35,14 +35,13 @@ Currently, performing the inventory step of a LCA includes the following challen
 * **Several processes may exist to produce the same product**. 
 * **Scientific contributions** are often referenced by the end product, but may also **include sub-process data valuable** for other studies. 
 
-This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. It references data at **the process level**.  
-By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. It references data at **the process level**. By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
 The following example illustrates this idea.
 
 - **Electrolytic capacitors**  
   - The ecoinvent reference to produce an [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) was originally added when importing the inventory of the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).  
   - A second process was imported as data from a research paper dedicated to this topic. The import script automatically detected that the process produces a product already present in the wiki.  
-  - The `build_lca_tree.py` script (see "3. Visualisation function" above) identifies that two alternative processes now exist for the node [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer) node. This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
+  - The `build_lca_tree.py` script (see "3. Visualisation function" above) produces a graph where two alternative processes are identified for the node [electrolytic capacitors](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_electrolytic_capacitors) in the tree starting at the [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer) node. See [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/out_tree/graph_pd_dell_3620_computer.svg) in ref. This enables researchers studying the Dell computer to easily update their LCA with the alternative process for the electrolytic capacitors and compare the results.
 
 - **GPU production**  
   - Two different processes are documented for the [GPU product](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_gpu).  
