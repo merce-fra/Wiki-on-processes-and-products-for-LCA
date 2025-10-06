@@ -12,7 +12,7 @@ Therefore, we added the following elements in the structure of the wiki (see [pd
 
 # Project Overview
 
-This project consists of three main parts:
+This project consists of four main parts:
 
 1. **The Wiki**  
    A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **inventory** part of a Life Cycle Assessment (LCA) study.
