@@ -1,6 +1,6 @@
 [Update (06/10/2025), **initial import tree**: The **initial scope and structure of an inventory** is an important information to keep. 
 * For instance, the quantity used in a sub-process are often established with respect to the root product LCI scope. 
-* Moreover, new processes may be added under an existing process. 
+* Moreover, new processes may be added under an existing product. 
 
 Therefore, we added the following elements in the structure of the wiki (see [pd_livebox_6](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_livebox_6) or [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer), [Process computer Loubet](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_dell_3620_computer_loubet) for examples): 
 * When importing an inventory, the LCI scope shoud be specified. 
