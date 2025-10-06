@@ -10,7 +10,16 @@ import os
 # Define paths for database files
 base_path_source = "./Wiki-on-processes-and-products-for-LCA/"  # EDIT THIS PATH IF NEEDED, parent folder for source files
 base_path_target = "./Wiki-on-processes-and-products-for-LCA.wiki/"  # Parent folder for generated wiki markdown files
-source_file_path = "Database_edition/source_import/smd_resistor.xlsx"  
+source_file_path = "Database_edition\source_import\Example_bw\Livebox_6.xlsx"  
+
+#Define some meta data
+root_node_LCI_scope = "Inventory of one livebox 6"  # Functional unit for the processes
+
+General_information = "From Youtube videoby Deux Ex Silicium: Dans les entrailles de la LIVEBOX 6 : analyses, mesures et décorticage de son électronique, link: https://www.youtube.com/watch?v=VryPNmlxxas"
+added_by = "Vincent Corlay (v.corlay@fr.merce.mee.com)"
+source_file ="Livebox_6.xlsx"
+
+
 path = base_path_source + source_file_path
 imp = ExcelImporter(path) #Brightway import function to import data from Excel files
 
@@ -22,6 +31,19 @@ process_db_path = os.path.join(base_path_target,"ps_db.md")
 # Create new directories if they don't exist
 os.makedirs(product_path, exist_ok=True)
 os.makedirs(process_path, exist_ok=True)
+
+from pathlib import Path
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Build_tree')))
+from build_lca_tree_helper import compute_tree_path_for_pair
+
+def compute_original_tree_path(root_product, root_process):
+    repo_root = Path(base_path_target)
+    # For now, use root_product and root_process as both root and target
+    # Save tree files to root_node_path_new directory for review
+    output_dir = repo_root / "root_node_path_new"
+    return compute_tree_path_for_pair(repo_root, root_product, root_process, root_product, root_process, save_tree=True, output_dir=output_dir)
 
 def is_content_different(existing_content: str, new_content: str) -> bool:
     def normalize(content):
@@ -72,6 +94,19 @@ def create_markdown_file(filepath, content):
     print(f"Created file: {filepath}")
     return True
 
+# Detect root product and process node (first process in imp.data)
+root_product_detected = None
+root_process_detected = None
+for rec in imp.data:
+    try:
+        rec_type = rec['type']
+    except KeyError:
+        rec_type = 'process'
+    if rec_type == 'process':
+        root_product_detected = "pd_" + rec.get('reference product', rec['name']).lower().replace(" ", "_").replace("__", "_").replace(",","")
+        root_process_detected = "ps_" + rec['name'].lower().replace(" ", "_").replace("__", "_").replace(",","")
+        break
+
 for record in imp.data:
     name = record['name']
     database = record['database']
@@ -95,9 +130,14 @@ for record in imp.data:
         prod_name = "pd_" + ref_prod.lower().replace(" ", "_").replace("__", "_").replace(",","")
         process_name = "ps_" + name.lower().replace(" ", "_").replace("__", "_").replace(",","")
         file_path = os.path.join(product_path, prod_name + ".md")
-        content = f"# Product: {prod_name}\n\n## List of processes\n\n"
-        content += f"* [{process_name}]({process_name}) - Quantity: {amount} {unit}\n\n"
-        content += "## May be similar to the following products\n\n"
+        
+        content = f"# Product: {prod_name}\n\n\n## List of processes\n\n"
+        # Only add root node info if this is the detected root product node
+        if prod_name == root_product_detected:
+            content += f"* [{process_name}]({process_name})\n    * Original process for product as root node. \n    * Original LCI scope: {root_node_LCI_scope}.\n    * Original tree path: [TREE_PATH_PLACEHOLDER](TREE_PATH_PLACEHOLDER) | [Tree Diagram](TREE_PATH_PLACEHOLDER.png)\n\n"
+        else:
+            content += f"* [{process_name}]({process_name}) - Quantity: {amount} {unit}\n\n"
+        content += "\n## May be similar to the following products"
         if create_markdown_file(file_path, content):
             print(f"Added product to database: {prod_name}")
 
@@ -150,7 +190,35 @@ for record in imp.data:
                 bio_link = f"bp_{exchange['name'].replace(' ', '_')}"
                 content += f"* [{bio_link}]({bio_link}) - Quantity: {exchange['amount']} {exchange['unit']} - Database: \n" #{exchange['database']}
 
-        content += "\n\n## Information\n\n\n  * Source file: {os.path.basename(path)}\n"
+         # --- Add link to original root product and process nodes ---
+        content += f"\n## Original root product and process nodes\n* Product: [{root_product_detected}]({root_product_detected})\n* Process: [{root_process_detected}]({root_process_detected})\n"
+        content += "\n\n## Information\n\n"
+        content += f"  * General information: {General_information}\n"
+        content += f"  * Added by: {added_by}\n"
+        content += f"  * Source file: {source_file}\n"
         # Optionally add more metadata here, e.g. author, document link, etc.
         if create_markdown_file(file_path, content):
             print(f"Added process to database: {process_name}")
+
+# Compute tree path once after all pages are generated
+print("\n[INFO] Computing tree path after all pages are generated...")
+tree_path_name = compute_original_tree_path(root_product_detected, root_process_detected)
+print(f"[OK] Tree path computed: {tree_path_name}")
+
+# Update the root product page with the actual tree path
+root_product_file_path = os.path.join(product_path, root_product_detected + ".md")
+if os.path.exists(root_product_file_path):
+    with open(root_product_file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Replace the placeholder with the actual tree path
+    updated_content = content.replace("TREE_PATH_PLACEHOLDER", tree_path_name)
+    
+    with open(root_product_file_path, 'w', encoding='utf-8') as file:
+        file.write(updated_content)
+    
+    print(f"[OK] Updated root product page with tree path: {tree_path_name}")
+    print(f"[INFO] Tree files generated in: root_node_path_new/")
+    print(f"[INFO] Review the files and move them to root_node_path/ if accepted")
+else:
+    print(f"[WARN] Root product file not found: {root_product_file_path}")

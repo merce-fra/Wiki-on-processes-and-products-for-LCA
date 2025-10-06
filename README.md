@@ -1,3 +1,11 @@
+[Update (03/10/2025): The **original scope and structure of an inventory** is an important information to keep. For instance, the quantity used in a sub-process are often established with respect to the root product LCI scope. Moreover, new processes may be added under an existing process. 
+Therefore, we added the following element in the structure of the wiki (see [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer), [Process computer Loubet](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/ps_dell_3620_computer_loubet) or [pd_livebox_6](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_livebox_6) for examples): 
+* When importing an inventory, the LCI scope shoud be specified. 
+* The root process of a root product is clearly indicated.
+* This LCI scope is added under the original process of the root product of the inventory. 
+* The original tree path is computed and added under the original process of the root product of the inventory (link to rn_ file).
+* A link to the original root product and process nodes is added in each child process page.] 
+
 [Update (05/09/2025): We added a python script to automatically build a **dependency tree**, with identification of alternative process nodes, starting from a chosen product or process node. See "3. Visualisation function" below.]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
