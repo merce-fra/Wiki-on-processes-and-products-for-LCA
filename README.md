@@ -18,7 +18,7 @@ Therefore, we added the following elements in the structure of the wiki (see [pd
 This project consists of four main parts:
 
 1. **The Wiki**  
-   A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **inventory** part of a Life Cycle Assessment (LCA) study.
+   A structured Wiki system to organize **processes and products**, that can be found in the public domain, to be used for the **life cycle inventory** (LCI) part of a Life Cycle Assessment (LCA) study.
    You can access it directly in the [Wiki of this GitHub](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki). Note that the GitHub Wiki is stored in a separate repository, which can be cloned using the link: https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA.wiki.
 
 
