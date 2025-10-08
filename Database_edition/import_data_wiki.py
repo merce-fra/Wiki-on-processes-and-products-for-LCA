@@ -13,7 +13,7 @@ base_path_target = "./Wiki-on-processes-and-products-for-LCA.wiki/"  # Parent fo
 source_file_path = "Database_edition\source_import\Example_bw\Livebox_6.xlsx"  
 
 #Define some meta data
-root_node_LCI_scope = "Inventory of one livebox 6"  # Functional unit for the processes
+root_node_LCI_scope = "Inventory of one livebox 6"  # Functional unit for the LCI
 
 General_information = "From Youtube videoby Deux Ex Silicium: Dans les entrailles de la LIVEBOX 6 : analyses, mesures et décorticage de son électronique, link: https://www.youtube.com/watch?v=VryPNmlxxas"
 added_by = "Vincent Corlay (v.corlay@fr.merce.mee.com)"
