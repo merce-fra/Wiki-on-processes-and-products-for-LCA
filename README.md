@@ -9,7 +9,7 @@ Therefore, we added the following elements in the structure of the wiki (see [pd
 * The original tree path is computed and added under the original process of the root product of the inventory (link to rn_ file).
 * A link to the original root product and process nodes is added in each child process page.] 
 
-[Update (05/09/2025): We added a python script to automatically build a **dependency tree**, with identification of alternative process nodes, starting from a chosen product or process node. See "3. Visualisation function" below.]
+[Update (05/09/2025): We added a python script to automatically build a **dependency tree**, with identification of alternative process nodes, starting from a chosen product or process page. See "3. Visualisation function" below.]
 
 [Update (20/08/2025): The dokuwiki format has been droped. The pages are now directly generated in markdown format in the folder `Wiki-on-processes-and-products-for-LCA.wiki`. The pages can now also be directly modifed from the online wiki.]
 
@@ -28,7 +28,7 @@ This project consists of four main parts:
    The script `import_data_wiki.py` (in the folder `Database_edition/`) relies on the brightway format to generate wiki pages from brightway-compatible data in Excel. See the section "Details on the import script for Brightway-formatted data" below for technical details.
 
 3. **Visualisation function**  
-   The script `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py` automatically build a **dependency tree** starting from a chosen product or process node, with **identification of alternative process nodes**. The output is in the Mermaid format. Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/out_tree/graph_pd_dell_3620_computer.svg) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).
+   The script `Wiki-on-processes-and-products-for-LCA/Build_tree/build_lca_tree.py` automatically build a **dependency tree** starting from a chosen product or process page, with **identification of alternative process nodes**. The output is in the Mermaid format. Click [here](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/out_tree/graph_pd_dell_3620_computer.svg) to see an example generated from the page [Dell computer](https://github.com/merce-fra/Wiki-on-processes-and-products-for-LCA/wiki/pd_dell_3620_computer).
    On the identification of alternative process nodes: If a **product node can be produced by several processes** (e.g., if several processes are listed in the 'List of processes' section of the product page), **this product node appears in red in the graph**. This indicates that one must then decide which subtree to follow among the possible options when building an inventory. The output is generated in the wiki folder `Wiki-on-processes-and-products-for-LCA.wiki\out_tree\graph_name_of_the_node.mmd` (not visible on Github, you need to pull the wiki).
 
 4. **AI-based Wiki Edition**  
@@ -37,10 +37,10 @@ This project consists of four main parts:
 # Vision
 
 Currently, performing the inventory step of a LCA includes the following challenges: 
-* **Several processes may exist to produce the same product**. 
-* **Scientific contributions** are often referenced by the end product, but may also **include sub-process data valuable** for other studies. 
+1. **Several processes may exist to produce the same product**. 
+2. **Scientific contributions** are often referenced by the end product, but may also **include sub-process data valuable** for other studies. 
 
-This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product. It references data at **the process level**. By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
+This open wiki is designed to efficiently **list and compare multiple approaches** for performing the inventory of a product (1). It references data at **the process level** (2). By documenting these alternatives, researchers gain a valuable resource to easily compare existing options and select the most suitable approach for their needs.  
 The following example illustrates this idea.
 
 - **Electrolytic capacitors**  
