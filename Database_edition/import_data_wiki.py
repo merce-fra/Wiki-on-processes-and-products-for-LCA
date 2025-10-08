@@ -10,14 +10,14 @@ import os
 # Define paths for database files
 base_path_source = "./Wiki-on-processes-and-products-for-LCA/"  # EDIT THIS PATH IF NEEDED, parent folder for source files
 base_path_target = "./Wiki-on-processes-and-products-for-LCA.wiki/"  # Parent folder for generated wiki markdown files
-source_file_path = "Database_edition\source_import\Example_bw\Livebox_6.xlsx"  
+source_file_path = "Database_edition\source_import\Example_bw\smd_resistor.xlsx"  
 
 #Define some meta data
-root_node_LCI_scope = "Inventory of one livebox 6"  # Functional unit for the LCI
+root_node_LCI_scope = "Inventory of a smd resistor"  # Functional unit for the LCI
 
-General_information = "From Youtube videoby Deux Ex Silicium: Dans les entrailles de la LIVEBOX 6 : analyses, mesures et décorticage de son électronique, link: https://www.youtube.com/watch?v=VryPNmlxxas"
-added_by = "Vincent Corlay (v.corlay@fr.merce.mee.com)"
-source_file ="Livebox_6.xlsx"
+General_information = "Inventory realized by David Pesce (Bcom)"
+added_by = "David Pesce (Bcom)"
+source_file ="smd_resistor.xlsx"
 
 
 path = base_path_source + source_file_path
